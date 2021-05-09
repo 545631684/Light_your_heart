@@ -1,0 +1,1 @@
+!function(t,r){"use strict";var e=String.prototype.replace,n=/%20/g,u=r("./utils.js"),i={RFC1738:"RFC1738",RFC3986:"RFC3986"};t.exports=u.assign({default:i.RFC3986,formatters:{RFC1738:function(t){return e.call(t,n,"+")},RFC3986:function(t){return String(t)}}},i)}(module,(exports,require));

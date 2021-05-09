@@ -1,0 +1,5 @@
+<view class="seve">
+  <image src="../../assets/images/daytime/seve.png"></image>
+  <text>恭喜您！完成任务</text>
+  <view bindtap="onSeve">知道啦！</view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "at-tabs": "../../npm/taro-ui/dist/weapp/components/tabs/index",
+    "at-search-bar": "../../npm/taro-ui/dist/weapp/components/search-bar/index",
+    "article-list": "../../components/articleList/index",
+    "load-bottom": "../../components/loadBottom/index"
+  },
+  "navigationBarTitleText": "健康之路"
+}

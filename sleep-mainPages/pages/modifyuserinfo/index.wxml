@@ -1,0 +1,36 @@
+<!--sleep-mainPages/pages/modifyuserinfo/index.wxml-->
+<view class="box">
+    <view class="cont head" bindtap="chooseImageTap">
+        <text class="tit">头像</text>
+        <view class="jiantou" ></view>
+        <image mode="aspectFill"  src="{{img}}"></image>
+    </view>
+    <view class="cont">
+        <text class="tit">昵称</text>
+        <view class="jiantou"></view>
+        <text class="cont_2">{{name}}</text>
+    </view>
+    <picker bindchange="slectSex"  range="{{['男','女']}}">
+        <view class="cont">
+            <text class="tit">性别</text>
+            <view class="jiantou"></view>
+            <text class="cont_2">{{sex}}</text>
+        </view>    
+    </picker>
+    <picker bindchange="slectAge"  range="{{ageArr}}">
+        <view class="cont">
+            <text class="tit">年龄</text>
+            <view class="jiantou"></view>
+            <text class="cont_2">{{age}}</text>
+        </view>
+    </picker>
+    <view class="cont">
+        <text class="tit">注册手机</text>        
+        <text class="cont_2">{{phone}}</text>
+    </view>
+     <view class="cont">
+        <text class="tit">用户ID</text>        
+        <text class="cont_2">{{showid}}</text>
+    </view>
+</view>
+    <button class="btn" bindtap="submit" >保存</button>

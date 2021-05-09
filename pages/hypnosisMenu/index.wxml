@@ -1,0 +1,9 @@
+<block wx:if="{{$taroCompReady}}">
+<view class="hypnosis-menus"><image class="hypnosis-menus-banner" mode="widthFix" src="{{bannerImg}}">
+</image><view class="hypnosis-menus-list"><view class="hypnosis-menus-item" bindtap="anonymousFunc0">
+<image class="hypnosis-menus-link" mode="widthFix" src="{{logImg}}"></image></view>
+<view class="hypnosis-menus-item" ><navigator url="/sleep-mainPages/pages/college/college"><image class="hypnosis-menus-link" mode="widthFix" src="{{cbtiImg}}">
+</image></navigator>
+</view><view class="hypnosis-menus-item" bindtap="anonymousFunc2">
+<image class="hypnosis-menus-link" mode="widthFix" src="{{toolImg}}"></image>
+</view></view></view></block>

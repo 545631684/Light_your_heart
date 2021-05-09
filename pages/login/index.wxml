@@ -1,0 +1,16 @@
+<block wx:if="{{$taroCompReady}}">
+  <view class="page-login">
+    <view class="login-panel">
+      <image class="login-logo" mode="aspectFit" src="{{logoImg}}"></image>
+      <view class="logo_title">好梦之旅</view>
+      <button open-type="getPhoneNumber" bindgetphonenumber="anonymousFunc0">
+        <at-button compid="{{$compid__46}}">
+          <image class="login-btn-icon" mode="aspectFit" src="{{wxImg}}"></image>微信授权登录
+        </at-button>
+      </button>
+      <!-- <at-button compid="{{$compid__47}}">
+        <image class="login-btn-icon" mode="aspectFit" src="{{phoneImg}}"></image>手机快捷登录
+      </at-button> -->
+    </view>
+  </view>
+</block>

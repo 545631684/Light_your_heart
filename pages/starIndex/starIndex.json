@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "tabbar":"/components/tabbar/tabbar"
+  },
+  "navigationStyle":"custom",
+  "backgroundColorTop":"#191552",
+  "backgroundColorBottom":"#350a44"
+}

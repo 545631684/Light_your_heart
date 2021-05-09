@@ -1,0 +1,30 @@
+<!--components/testResult/testResult.wxml-->
+<view class="box">
+  <image src="../../assets/images/testResult/bg.png"  mode="widthFix" class="img1"></image>
+  <image src="../../assets/images/testResult/bg1.png" class="img2"></image>
+  <image src="{{photo}}" class="photo"></image>
+  <view class="title">阿森斯失眠量表</view>
+  <view>
+    <text class="score">{{score}}</text>
+    <text class="fen">分</text>
+  </view>
+  <view class="time">测试时长：{{time}}</view>
+  <view>
+    <text class="numbers" style="top:446rpx;left:81rpx">“</text>
+    <text class="hint">{{hint}}</text>
+    <text class="numbers" style="top:573rpx;left:637rpx">”</text>
+  </view>
+  <view class="line"></view>
+
+  <view>
+    <image src="../../assets/images/testResult/icon.png" class="img3" style="left:163rpx"></image>
+    <text class="analyze">测试分数分析</text>
+    <image src="../../assets/images/testResult/icon.png" class="img3" style="left:477rpx"></image>
+  </view>
+
+  <view class="cont">
+    <text>(1)总分小于4:恭喜您，您的睡眠质量杠\n</text>
+    <text style="top:828rpx">(2)总分在4-6:您有轻微的失眠\n</text>
+    <text style="top:896rpx">(3)总分6分以上:您已经处于失眠状态\n</text>
+  </view>
+</view>

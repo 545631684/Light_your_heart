@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view class="radio-list"><radio-item wx:key="FId" wx:for="{{loopArray10}}" wx:for-item="item" wx:for-index="i" compid="{{item.$compid__59}}"></radio-item></view></block>

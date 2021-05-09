@@ -1,0 +1,13 @@
+<!--components/mission-cont/mission-cont1.wxml-->
+<view class="box">
+<view class="img">
+  <image src="{{img}}" class='img1'></image>
+</view>
+  <view class="title">{{title}}</view>
+  <!-- <navigator url="/sleep-clockinPages/pages/adhereclockin/adhereclockin"> -->
+   <view class="con" wx:if="{{con == 0}}">去打卡</view>
+   <view class="con" wx:else style="color:#ccc">已打卡</view>
+  <!-- </navigator> -->
+ 
+  <image src="{{img1}}" class="fanhui"></image>
+</view> 

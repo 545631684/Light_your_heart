@@ -1,0 +1,127 @@
+.img{
+  position: fixed;
+  position: relative;
+}
+.nav{
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+page{
+  background-color: #f0f8ff;
+}
+.body{
+  width: 100%;
+  position: absolute;
+  top: 243rpx;
+  left: 0;
+}
+.top{
+  width: 660rpx;
+  margin: 0 auto;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:600;
+  color:rgba(51,51,51,1);
+  /* line-height:60rpx; */
+  }
+  .toptext{
+  
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:#666;
+  line-height:40rpx;
+  display: block;
+  margin-top: 28rpx ;
+  }
+.btnbox{
+  width: 100%;
+  /* background-color: #f0f8ff; */
+  height: 165rpx;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+}
+  .btn{
+    /* 点击以后 */
+    width:670rpx;
+    height:90rpx;
+    background:rgba(70,113,244,1);
+    border-radius:46px;
+    position: absolute;
+    /* top: 43rpx; */
+    left: 50%;
+    margin-left: -335rpx;  
+  
+    text-align: center;
+  }
+  .btn text{
+    /* 点击后 */
+  font-size:36rpx;
+  font-family:PingFangHK-Medium,PingFangHK;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height: 90rpx; 
+  letter-spacing:6rpx;
+  }
+.cont{
+  width: 660rpx;
+ margin:0 auto;
+  margin-top: 43rpx;
+  /* height: 612rpx; */
+  overflow-y: auto;
+  /* text-align: center; */
+  /* padding-bottom: 205rpx; */
+}
+.cont::-webkit-scrollbar {
+  width: 4rpx;
+  height: 4rpx;
+  color:#ffffff;
+ }
+  
+ /*定义滚动条轨道 内阴影+圆角*/
+ .cont::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3rpx rgba(0, 0, 0, 0.3);
+   box-shadow: inset 0 0 3rpx rgba(0, 0, 0, 0.1);
+   border-radius: 10rpx;
+  /* background-color:#FFFFFF; */
+ }
+  
+ /*定义滑块 内阴影+圆角*/
+ .cont::-webkit-scrollbar-thumb {
+  border-radius: 10rpx;
+  -webkit-box-shadow: inset 0 0 3rpx rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3rpx rgba(0, 0, 0, 0.1);
+  background:linear-gradient(335deg,rgba(0,94,237,1) 0%,rgba(106,158,237,1) 100%);
+ }
+.cont text{
+  display: inline-block;
+  background: white;
+  border:1px solid rgba(242,242,242,1);
+  /* margin:10rpx; */
+  margin-bottom: 40rpx;
+  padding: 0 27.5rpx;
+  font-size: 28rpx;
+  border-radius: 100rpx;
+  text-align: center;
+  height: 78rpx;
+  line-height: 78rpx;
+}
+.cont>view{
+  position: relative;
+}
+.right{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.active{
+  background:linear-gradient(335deg,rgba(0,94,237,1) 0%,rgba(106,158,237,1) 100%) !important;
+  color:rgba(255,255,255,1) !important;
+}
+.cont .selArr{
+  border: 1px solid rgba(70,113,244,1) ;
+}

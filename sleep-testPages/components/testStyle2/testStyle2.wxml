@@ -1,0 +1,6 @@
+<!--pages/testStyle2/testStyle2.wxml-->
+<!-- <text>pages/testStyle2/testStyle2.wxml</text> -->
+<view class="title">{{title}}</view>
+<testStyleItem2  bind:myevent="result" name="test{{index+1}}" wx:for="{{question}}" wx:key="item" titles="{{item.Problem}}" FId="{{item.FId}}" Sort="{{item.Sort}}" index="{{index+1}}" answer="{{answer}}" /> 
+<view class="button" bind:tap="tijiao">提交</view>
+<view class="tips" wx:if="{{type==1}}">*工作包括有偿工作、无偿自愿工作或者培训</view>

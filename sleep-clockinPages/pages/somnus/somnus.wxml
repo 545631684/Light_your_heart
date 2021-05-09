@@ -1,0 +1,55 @@
+<!--index.wxml-->
+  <view class="nav" style="height:200rpx;">
+  <my-nav bg="../../assets/images/doctor/ing1.png" class="img"></my-nav>
+  
+  </view>
+  <view class="body">  
+   <view class="top">
+            请从以下助眠任务中选择你的改进目标
+         <text class="toptext" >您是否意识到，您的一些不良生活习惯也会影响睡眠质量的好坏。好的睡眠，从改进不良生活习惯开始！刚开始时，请从以下助眠任务选择三项，作为您的改进目标，每天打卡完成。三项目标达成后可选择添加更多的任务作为新的目标，直到所有的助眠任务达成。请坚持下去，进行每天的自我约束和调整！
+   </text>
+   </view>
+   <view class="cont">   
+      <view>
+         <text bindtap="on" wx:if="{{!arrs[0]}}" data-idx="{{0}}" data-name="{{list[0].ItemName}}" class="{{arr[0] == list[0].ItemName?'active':''}}">{{list[0].ItemName}}</text>
+         <text  wx:else bindtap="of" data-idx="{{0}}" class="active">{{list[0].ItemName}}</text>
+         <text bindtap="on" wx:if="{{!arrs[1]}}" data-idx="{{1}}" data-name="{{list[1].ItemName}}" class="{{arr[1] == list[1].ItemName?'active':''}} right">{{list[1].ItemName}}</text>
+         <text  wx:else bindtap="of" data-idx="{{1}}" class="active right">{{list[1].ItemName}}</text>
+      </view>
+       <view>
+         <text bindtap="on" wx:if="{{!arrs[2]}}" data-idx="{{2}}" data-name="{{list[2].ItemName}}" class="{{arr[2] == list[2].ItemName?'active':''}}">{{list[2].ItemName}}</text>
+         <text  wx:else bindtap="of" data-idx="{{2}}" class="active">{{list[2].ItemName}}</text>
+         <text bindtap="on" wx:if="{{!arrs[3]}}" data-idx="{{3}}" data-name="{{list[3].ItemName}}" class="{{arr[3] == list[3].ItemName?'active':''}} right">{{list[3].ItemName}}</text>
+         <text  wx:else bindtap="of" data-idx="{{3}}" class="active right">{{list[3].ItemName}}</text>
+      </view>
+       <view>
+         <text bindtap="on" wx:if="{{!arrs[4]}}" data-idx="{{4}}" data-name="{{list[4].ItemName}}" class="{{arr[4] == list[4].ItemName?'active':''}}">{{list[4].ItemName}}</text>
+         <text  wx:else bindtap="of" data-idx="{{4}}" class="active">{{list[4].ItemName}}</text>
+      </view>
+      <view>
+         <text bindtap="on" wx:if="{{!arrs[5]}}" data-idx="{{5}}" data-name="{{list[5].ItemName}}" class="{{arr[5] == list[5].ItemName?'active':''}}">{{list[5].ItemName}}</text>
+         <text  wx:else bindtap="of" data-idx="{{5}}" class="active">{{list[5].ItemName}}</text>
+      </view>
+      <view>
+         <text bindtap="on" wx:if="{{!arrs[6]}}" data-idx="{{6}}" data-name="{{list[6].ItemName}}" class="{{arr[6] == list[6].ItemName?'active':''}}">{{list[6].ItemName}}</text>
+         <text  wx:else bindtap="of" data-idx="{{6}}" class="active">{{list[6].ItemName}}</text>
+         <text bindtap="on" wx:if="{{!arrs[7]}}" data-idx="{{7}}" data-name="{{list[7].ItemName}}" class="{{arr[7] == list[7].ItemName?'active':''}} right">{{list[7].ItemName}}</text>
+        <text  wx:else bindtap="of" data-idx="{{7}}" class="active right">{{list[7].ItemName}}</text>
+      </view>
+      <view>
+         <text bindtap="on" wx:if="{{!arrs[8]}}" data-idx="{{8}}" data-name="{{list[8].ItemName}}" class="{{arr[8] == list[8].ItemName?'active':''}}">{{list[8].ItemName}}</text>
+        <text  wx:else bindtap="of" data-idx="{{8}}" class="active">{{list[8].ItemName}}</text>
+      </view>
+      <view>
+         <text bindtap="on" wx:if="{{!arrs[9]}}" data-idx="{{9}}" data-name="{{list[9].ItemName}}" class="{{arr[9] == list[9].ItemName?'active':''}}">{{list[9].ItemName}}</text>
+         <text  wx:else bindtap="of" data-idx="{{9}}" class="active">{{list[9].ItemName}}</text>
+      </view>
+      
+      <!-- <text wx:for="{{list}}" wx:key="index" bindtap="on" data-idx="{{index}}" data-name="{{item.ItemName}}" class="{{arr[index] == item.ItemName?'active':''}}">{{item.ItemName}}</text> -->
+   </view>
+   <view class="bottom" class="btnbox">
+      <view class="btn" bindtap="commit"><text>提交</text></view>  
+   </view>
+   <seve  wx:if="{{isShow}}" title="选择习惯成功,立刻去打卡吧!"  bind:onSeve="close"/>
+  
+  </view>

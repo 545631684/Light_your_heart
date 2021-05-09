@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-grid": "/miniprogram_npm/@vant/weapp/grid/index",
+    "van-grid-item": "/miniprogram_npm/@vant/weapp/grid-item/index",
+    "my-water":"../../components/my-water2/my-water",
+    "van-circle": "/miniprogram_npm/@vant/weapp/circle/index",
+    "ec-get":"../../components/ec-get/ec-get",
+    "ec-duration":"../../components/ec-duration/ec-duration",
+    "ec-out":"../../components/ec-out/ec-out",
+    "tabbar":"/components/tabbar/tabbar"
+  },
+  "navigationBarTitleText": "睡眠分析"
+}

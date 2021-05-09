@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view class="load-bottom"><block wx:if="{{loading}}"><at-activity-indicator compid="{{$compid__52}}"></at-activity-indicator></block><block wx:if="{{!loading && nodata}}"><view class="load-bottom-nodata">没有更多了</view></block></view></block>

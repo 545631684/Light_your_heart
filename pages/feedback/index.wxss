@@ -1,0 +1,1 @@
+@charset "UTF-8";.feedback-form{padding:24rpx 36rpx}.feedback-form-input{border:1rpx solid #e2e2e2;background:#fff;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;padding:12rpx;margin:24rpx 0}.feedback-form-input:after{display:none}

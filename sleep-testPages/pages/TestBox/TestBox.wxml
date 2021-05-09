@@ -1,0 +1,34 @@
+<!--sleep-testPages/pages/TestBox/TestBox.wxml-->
+<!-- <view class="test_box" wx:for="{{list}}" catchtap="toTestList" data-id="{{item.id}}">
+  <image class="ic_img" src="{{item.CoverPic}}"></image>
+  <view class="title">{{item.TypeName}}</view>
+</view> -->
+
+<view class="nav-tab">
+  <view class="tab-item {{current== item.id?'active':''}}" wx:for="{{list}}" data-index="{{item.id}}" catchtap="navTab">
+    {{item.TypeName}}
+  </view>
+</view>
+
+<view>
+  <block wx:for="{{testList}}" wx:key="item">
+    <navigator wx:if="{{item.type==0}}" url="/pages/evaluateList/index?id={{item.id}}&title={{item.CourseName}}">
+      <view class="box">
+        <view class="title">{{index+1}}.{{item.CourseName}}</view>
+        <!-- <view class="info">{{item.InputerDate}}</view>        -->
+        <view class="info">
+          <rich-text nodes="{{item.CourseDesc}}"></rich-text>
+        </view>
+      </view>
+    </navigator>
+    <navigator wx:if="{{item.type==1}}" url="{{item.pageurl}}">
+      <view class="box">
+        <view class="title">{{index+1}}.{{item.CourseName}}</view>
+        <!-- <view class="info">{{item.InputerDate}}</view>        -->
+        <view class="info">
+          <rich-text nodes="{{item.CourseDesc}}"></rich-text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>

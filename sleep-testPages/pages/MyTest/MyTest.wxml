@@ -1,0 +1,12 @@
+<!--sleep-testPages/pages/TestList/TestList.wxml-->
+<view wx:if="{{lists.length>0}}">
+        
+                <view class="box" wx:for="{{lists}}" wx:key="item" bindtap="sendToResult" data-mydata="{{item}}">
+                        <view class="title">{{index+1}}.{{item.GaugeName}}</view> 
+                        <view class="info">{{item.GaugeContent}}</view>       
+                </view>
+        
+</view>
+<view wx:else>
+     <text class="notest">暂无测评</text>
+</view>

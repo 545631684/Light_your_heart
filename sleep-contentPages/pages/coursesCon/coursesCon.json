@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "title":"../../components/title/title",
+    "seve":"../../components/seve/seve"
+  },
+  "navigationBarTitleText": "",
+  "navigationBarTextStyle":"white",
+  "navigationStyle": "custom"
+}

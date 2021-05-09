@@ -1,0 +1,46 @@
+<block wx:if="{{$taroCompReady}}">
+  <view>
+    <swiper class="view-banner" indicator-color="#fff" indicator-active-color="rgba(255, 255, 255, 0.5)"
+      circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}">
+      <swiper-item wx:key="Url" wx:for="{{banner}}" wx:for-item="item" wx:for-index="_anonIdx2">
+        <image class="view-banner-img" mode="aspectFill" src="{{item.Url}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="view-menu">
+      <view class="view-menu-item link" bindtap="anonymousFunc0">
+        <view class="view-menu-icon view-menu-icon-1">
+          <at-icon compid="{{$compid__0}}"></at-icon>
+        </view>
+        <view class="view-menu-txt">睡眠评估</view>
+      </view>
+      <view class="view-menu-item link" bindtap="anonymousFunc1">
+        <view class="view-menu-icon view-menu-icon-2">
+          <at-icon compid="{{$compid__1}}"></at-icon>
+        </view>
+        <view class="view-menu-txt">相关状况测评</view>
+      </view>
+      <view class="view-menu-item link" bindtap="anonymousFunc2">
+        <view class="view-menu-icon view-menu-icon-3">
+          <at-icon compid="{{$compid__2}}"></at-icon>
+        </view>
+        <view class="view-menu-txt">好梦之旅</view>
+      </view>
+      <view class="view-menu-item link" bindtap="anonymousFunc3">
+        <view class="view-menu-icon view-menu-icon-4">
+          <at-icon compid="{{$compid__3}}"></at-icon>
+        </view>
+        <view class="view-menu-txt primary">企业入口</view>
+      </view>
+    </view>
+    <view class="view-doctor" bindtap="anonymousFunc4">
+      <image class="view-doctor-img" mode="widthFix" src="{{docImg}}"></image>
+    </view>
+    <view class="panel">
+      <view class="panel-header"><text class="panel-header-title">精选推荐</text></view>
+      <view class="panel-content view-article">
+        <article-list compid="{{$compid__4}}"></article-list>
+        <load-bottom compid="{{$compid__5}}"></load-bottom>
+      </view>
+    </view>
+  </view>
+</block>

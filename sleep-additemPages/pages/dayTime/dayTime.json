@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "week":"../../components/week/week",
+    "title":"../../components/title/title",
+    "day_con":"../../components/day_con/day_con",
+    "btn":"../../components/btn/btn",
+    "seve":"../../components/seve/seve"
+  },
+  "navigationBarTitleText": "请回忆并记录白天状况"
+}

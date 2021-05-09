@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view class="test-list">我的咨询</view></block>

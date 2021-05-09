@@ -1,0 +1,2 @@
+<!--pages/TestQuestion/TestQuestion.wxml-->
+<testStyle1  question="{{question}}"  answer="{{answer}}" bind:myEvent="result" title="{{title}}"  />

@@ -1,0 +1,62 @@
+/* sleep-mainPages/pages/doctor/doctor.wxss */
+view,
+text {
+  box-sizing: border-box;
+}
+
+page {
+  background: #F4F8FD;
+}
+
+.doctor_list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 24rpx;
+}
+
+.doctor_item {
+  width: 100%;
+  height: auto;
+  background: #FFF;
+  border-radius: 24rpx;
+  display: flex;
+  padding: 24rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.doctor_avator {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 24rpx;
+}
+
+.doctor_info {
+  font-size: 28rpx;
+}
+
+.doctor_info_title {
+  color: #666;
+  width: 140rpx;
+}
+.rating_img{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 8rpx;
+}
+
+.preview_btn {
+  width: 192rpx;
+  height: 68rpx;
+  background: #2258ec;
+  border-radius: 16rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 68rpx;
+  margin-top: 12rpx;
+  position: absolute;
+  right: 24rpx;
+  top: 16rpx;
+}

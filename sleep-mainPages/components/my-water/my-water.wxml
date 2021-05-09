@@ -1,0 +1,24 @@
+<view class="boll">     
+        <view class="water w1" style="top:{{100-size}}%"></view>
+        <view class="water w2" style="top:{{100-size}}%"></view>
+        <view class="water" style="top:{{100-size}}%"></view>        
+</view>
+<view class="out">
+        <view class="circle" style="left:0">	
+        <view class="pie_left">		
+            <view class="left" id="left" style="transform:rotate({{reg2}}deg)"></view>	
+        </view>	<view class="pie_right">		
+            <view class="right" id="right" style="transform:rotate({{reg1}}deg)"></view>	
+         </view>	<view class="mask">	            	    
+            <view style="margin-top: 50px; color: #31384d; font-size: 36px; ">		    
+            </view>			</view></view>
+</view>
+<view class="docbox">
+        <view class="{{size==0 ? 'doc' : 'doc2' }}"></view>
+</view>
+<view  class="docbox" style="transform:rotate( {{size/101*360}}deg)">
+        <view  class="{{size==0 ? 'doc' : 'doc1' }}"></view>
+</view>
+
+
+

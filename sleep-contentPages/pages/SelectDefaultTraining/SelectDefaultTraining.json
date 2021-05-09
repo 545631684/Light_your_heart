@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "training-cont":"../../components/training-cont/training-cont"
+  },
+  "navigationBarTitleText": "放松训练"
+}

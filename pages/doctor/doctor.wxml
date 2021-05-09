@@ -1,0 +1,40 @@
+<!--pages/doctor/doctor.wxml-->
+<view class="doctor_page">
+  <view class="doctor_tab">
+    <view class="tab_item">个人介绍</view>
+    <view class="tab_item">专栏</view>
+    <view class="tab_item active">咨询过程</view>
+    <view class="tab_item">可约时间</view>
+  </view>
+  <view class="tips">首次预约可选择未来14天内的时段，最早可约24小时后的时段</view>
+  <view class="doctor_title">咨询时段
+    <text class="title_tip">（北京时间）</text>
+  </view>
+  <view class="dictor_date">
+    <view class="date_item {{current==index?'active':''}}" catchtap="chooseDate" data-index="{{index}}"
+      wx:for="{{doctorTime}}">
+      <view class="week">{{item.date}}</view>
+      <!-- <view class="date">4.6</view> -->
+    </view>
+  </view>
+  <!-- <view class="doctor_title">咨询方式</view>
+  <view class="doctor_med">
+    <view class="med_item">语音咨询</view>
+    <view class="med_item">视频咨询</view>
+  </view> -->
+  <view class="doctor_title">可选时间
+    <!-- <text class="title_tip">时间不合适？</text> -->
+    <!-- <text class="title_tip title_tip_blue">试试与咨询师协调时间</text> -->
+  </view>
+  <view wx:if="{{current>-1}}">
+    <view class="time_box" wx:if="{{doctorTime[current].times.length>0}}">
+      <view class="time_can  {{timeid==item.id?'active':''}}" wx:for="{{doctorTime[current].times}}" data-timeid="{{item.id}}" catchtap="chooseTime">
+        {{item.start_time}}</view>
+    </view>
+    <view wx:else class="time_tips">
+      已约满
+    </view>
+  </view>
+  <view wx:else class="time_tips">请先选择咨询时段</view>
+  <view class="preview_btn" catchtap="submit">提交预约</view>
+</view>

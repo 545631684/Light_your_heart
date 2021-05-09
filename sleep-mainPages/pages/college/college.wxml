@@ -1,0 +1,274 @@
+<!--学院-->
+<swiper autoplay="false" duration="1000" circular="true" interval="2000">
+  <swiper-item wx:for="{{Schedule}}" catchtap="toMyCourses">
+    <image class="banner_img" src="{{item.Image}}"></image>
+    <view class="banner_title">{{item.Introduce}}</view>
+  </swiper-item>
+</swiper>
+<!-- 睡眠日志 -->
+<!-- 记录昨晚睡眠 -->
+<view class="sleep" wx:if="{{recordYestereve==true}}">
+  <view class="sleep_top">
+    <text class="title">睡眠日志</text>
+    <view class="riji">
+      <view>请填写您昨晚睡眠日记</view>
+    </view>
+    <navigator url="/sleep-clockinPages/pages/WeeklySleepRecord/WeeklySleepRecord">
+      <text class="jilu">更多记录</text>
+      <image src="../../assets/images/college/fanhui-4.png" class="gengduo"></image>
+    </navigator>
+  </view>
+  <view class="water">
+    <my-water size="0" />
+    <view style="position:absolute;top:0;z-index:88">
+      <text class="size">0</text><text class="cent">%</text>
+    </view>
+    <view class="record"> 尚未记录</view>
+  </view>
+  <navigator class="quality" url="/sleep-additemPages/pages/RecordSleep2/RecordSleep">
+    <view>请在每夜入睡前完成记录</view>
+  </navigator>
+  <view class="kong" style="margin-top:36rpx"></view>
+</view>
+
+
+
+<!-- 睡眠日志 -->
+<view class="sleep" wx:if="{{amendYestereve==true}}">
+  <view class="sleep_top">
+    <text class="title">睡眠日志</text>
+    <navigator url="/sleep-clockinPages/pages/WeeklySleepRecord/WeeklySleepRecord">
+      <text class="jilu" style="left:593rpx">更多记录</text>
+      <image src="../../assets/images/college/fanhui-4.png" class="gengduo"></image>
+    </navigator>
+  </view>
+
+  <view class="water">
+    <my-water size="{{data}}" />
+    <view style="position:absolute;top:0;z-index:88" class="{{data >= 75 ? 'sizecolor' : ''}}">
+      <text class="size " style="left:89rpx;">{{data}}</text><text class="cent" style="left:171rpx">%</text>
+    </view>
+    <view class=" record {{data >= 40 ? 'recordcolor' : ''}}" style="top:128rpx;left:76rpx">睡眠效率</view>
+  </view>
+  <view class="time">
+    <view class="timet">
+      <image src="../../assets/images/college/shuijue.png" class="shuijueimg"></image>
+      <text class="Bedtime">卧床时长:{{Bedtime}}</text>
+      <text class="fenge">|</text>
+      <image src="../../assets/images/college/fenzu17.png" class="qiimg"></image>
+      <text class="Uptime">睡眠时长:{{GetUpTime}}</text>
+    </view>
+  </view>
+  <view style="width:100%;text-align:center">
+    <navigator class="quality2" style="margin-right:5rpx;margin-left:0"
+      url='/sleep-additemPages/pages/RecordSleep2/RecordSleep?UpData=true'>
+      <view>修改昨晚睡的好吗?</view>
+    </navigator>
+    <navigator class="quality1" style="margin-left:5rpx" url='/sleep-additemPages/pages/dayTime/dayTime?UpData=true'>
+      <view>修改白天行为</view>
+    </navigator>
+  </view>
+  <view class="kong" style="margin-top:33rpx"></view>
+</view>
+
+<!-- 今日白天感觉如何？ -->
+
+<view class="sleep" wx:if="{{recordToday==true}}">
+  <view class="sleep_top">
+    <text class="title" catchtap='showDialogBtn'>睡眠日志</text>
+    <navigator url="/sleep-clockinPages/pages/WeeklySleepRecord/WeeklySleepRecord">
+      <text class="jilu">更多记录</text>
+      <image src="../../assets/images/college/fanhui-4.png" class="gengduo"></image>
+    </navigator>
+  </view>
+
+  <view class="water">
+    <my-water size="{{data}}" />
+    <view style="position:absolute;top:0;z-index:88" class="{{data >= 50 ? 'sizecolor' : ''}}">
+      <text class="size" style="left:89rpx">{{data}}</text><text class="cent" style="left:171rpx">%</text>
+    </view>
+    <view class="record" class=" record {{data >= 50 ? 'recordcolor' : ''}}" style="top:135rpx">睡眠效率</view>
+  </view>
+  <view class="time">
+    <view class="timet">
+      <image src="../../assets/images/college/shuijue.png" class="shuijueimg" style="border:0"></image>
+      <text class="Bedtime">卧床时长:{{Bedtime}}</text>
+      <text class="fenge">|</text>
+      <image src="../../assets/images/college/fenzu17.png" class="qiimg" style="border:0"></image>
+      <text class="Uptime">睡眠时长:{{GetUpTime}}</text>
+    </view>
+  </view>
+  <view style="text-align:center;width:100%">
+    <navigator class="quality2" style="margin-left:0;margin-right:5rpx"
+      url="/sleep-additemPages/pages/RecordSleep2/RecordSleep?UpData=true">
+      <view>请在每夜入睡前完成记录</view>
+    </navigator>
+    <!-- <navigator class="quality" style="margin-left:5rpx;margin-top:0" url="/sleep-additemPages/pages/dayTime/dayTime">
+      <view>今日白天感觉如何</view>
+    </navigator> -->
+  </view>
+  <view class="kong" style="margin-top:33rpx"></view>
+</view>
+
+<view class="sleep" wx:if="{{HealthHabit == true}}">
+  <view class="sleep_top">
+    <text class="title">睡眠日志</text>
+    <navigator url="/sleep-clockinPages/pages/WeeklySleepRecord/WeeklySleepRecord">
+      <text class="jilu" style="left:593rpx">更多记录</text>
+      <image src="../../assets/images/college/fanhui-4.png" class="gengduo"></image>
+    </navigator>
+  </view>
+
+  <view class="water">
+    <my-water size="{{data}}" />
+    <view style="position:absolute;top:0;z-index:88" class="{{data >= 50 ? 'sizecolor' : ''}}">
+      <text class="size" style="left:89rpx">{{data}}</text><text class="cent" style="left:171rpx">%</text>
+    </view>
+    <view class="record" class=" record {{data >= 50 ? 'recordcolor' : ''}}" style="top:128rpx;left:76rpx">睡眠效率</view>
+  </view>
+  <view class="time">
+    <view class="timet">
+      <image src="../../assets/images/college/shuijue.png" class="shuijueimg" style="border:0"></image>
+      <text class="Bedtime">卧床时长:{{Bedtime}}</text>
+      <text class="fenge">|</text>
+      <image src="../../assets/images/college/fenzu17.png" class="qiimg" style="border:0"></image>
+      <text class="Uptime">睡眠时长:{{GetUpTime}}</text>
+    </view>
+  </view>
+  <navigator class="quality" url='/sleep-additemPages/pages/RecordSleep2/RecordSleep?UpData=true'
+    style="margin-top:20rpx">
+    <view>昨晚睡得好吗？</view>
+  </navigator>
+  <view class="kong" style="margin-top:33rpx"></view>
+</view>
+
+
+<!-- 天天打卡 -->
+<view class="daka">
+  <view class="daka_title">天天打卡</view>
+  <view class="task_box">
+    <navigator bindtap="xuanze" wx:if="{{kong}}">
+      <mission-cont title="选择助眠任务" con=" " img="../../assets/images/college/Bitmap.png" class="mission-cont2" />
+    </navigator>
+    <view wx:else bindtap="weishengxiguan" class="dakalunbo">
+      <swiper autoplay="true">
+        <swiper-item wx:for="{{lunboArr}}" wx:key="item">
+          <mission-cont1 title="{{item.ItemName}}" con="{{item.IsClockIn}}" img="{{item.ItemUrl}}"
+            img1="../../assets/images/college/fanhui.png" />
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="kong" style="clear:both;margin-top:36rpx"></view>
+</view>
+
+<!-- 放松训练 -->
+<view class="task trains">
+  <text class="con_left" style="top:32rpx">放松训练</text>
+  <navigator url="/sleep-contentPages/pages/SelectDefaultTraining/SelectDefaultTraining">
+    <text class="con_right" style="left:640rpx;top:38rpx">更多</text>
+    <image src="../../assets/images/college/fanhui-4.png" class="symbol" style="top:44rpx"></image>
+  </navigator>
+  <view style="overflow: hidden;padding_bottom:8rpx">
+    <view class="training" catchtap="toTrainDetail" wx:for="{{Train}}" data-id="{{item.id}}">
+      <training-cont title="{{item.Titil}}" cont="{{item.Introduce}}" id="123" img="{{item.Image}}" />
+      <van-toast id="van-toast" />
+    </view>
+  </view>
+  <view class="kong" style="clear:both;margin-top:36rpx"></view>
+</view>
+
+
+<!-- 安眠音乐 -->
+<!-- <view class="task">
+  <text class="con_left" style="top:32rpx">安眠音乐</text>
+  <navigator url="/sleep-contentPages/pages/SelectDefaultTraining/SelectDefaultTraining">
+    <text class="con_right" style="left:640rpx;top:38rpx">更多</text>
+    <image src="../../assets/images/college/fanhui-4.png" class="symbol" style="top:44rpx"></image>
+  </navigator>
+  <scroll-view class="box" scroll-x>
+    <view class="Music1">
+      <image src="../../assets/images/college/music(1).png" class="Music1_img"></image>
+      <image src="../../assets/images/college/bofang.png" class="bof"></image>
+      <view class="Music1_b">
+        <text class="Music1_b_con">浩瀚宇宙</text>
+      </view>
+    </view>
+    <view class="Music1" style="margin-left:20rpx">
+      <image src="../../assets/images/college/music(2).png" class="Music1_img"></image>
+      <image src="../../assets/images/college/bofang.png" class="bof"></image>
+      <view class="Music1_b">
+        <text class="Music1_b_con">海滩放松</text>
+      </view>
+    </view>
+    <view class="Music1" style="margin-left:20rpx">
+      <image src="../../assets/images/college/music(3).png" class="Music1_img"></image>
+      <image src="../../assets/images/college/bofang.png" class="bof"></image>
+      <view class="Music1_b">
+        <text class="Music1_b_con">小睡一下 </text>
+      </view>
+    </view>
+    <view class="Music1" style="margin-left:20rpx;margin-right:20rpx;">
+      <image src="../../assets/images/college/music(4).png" class="Music1_img"></image>
+      <image src="../../assets/images/college/bofang.png" class="bof"></image>
+      <view class="Music1_b">
+        <text class="Music1_b_con">酣睡入</text>
+      </view>
+    </view>
+  </scroll-view>
+</view> -->
+<!-- 测评问答 -->
+<!-- 记录昨晚睡眠 -->
+<view class="task" wx:if="{{recordToday==false}}">
+  <text class="con_left">测评工具箱</text>
+  <image src="../../assets/images/college/fanhui-4.png" class="symbol" catchtap="toTestList"></image>
+  <navigator url="/sleep-testPages/pages/TestBox/TestBox">
+    <view>
+      <image src="../../assets/images/college/0022.png" class="questionnaire"></image>
+    </view>
+  </navigator>
+</view>
+
+
+<!-- 记录白天睡眠 -->
+<view class="task" wx:if="{{recordToday==true}}">
+  <text class="con_left" style='top:32rpx'>测评工具箱</text>
+  <!-- <view class="accomplish">
+    <view>已完成</view>
+  </view> -->
+  <navigator url="/sleep-testPages/pages/TestBox/TestBox">
+    <text class="con_right" style="left:586rpx;top:38rpx"></text>
+    <image src="../../assets/images/college/fanhui-4.png" class="symbol" style="top:44rpx"></image>
+  </navigator>
+
+  <navigator url="/sleep-testPages/pages/TestBox/TestBox">
+    <view style="margin-top:80rpx">
+      <image src="../../assets/images/college/0022.png" class="questionnaire" style="top:116rpx"></image>
+    </view>
+
+  </navigator>
+</view>
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <image src="../../assets/images/college/zu2(1).png" class="tishiimg"></image>
+  <view class="modal-content" style="text-align:center">
+    您好，请填写量表
+  </view>
+  <view class="modal-footer">
+    <view class="btn btn-cancel" bindtap="hideModal" data-status="cancel">
+      <view>下次吧</view>
+    </view>
+    <view class="btn btn-confirm" bindtap="onConfirm" data-status="confirm">
+      <view>马上去</view>
+    </view>
+    <image src="../../assets/images/college/close.png" class="close" bindtap="hideModal"></image>
+
+  </view>
+</view>
+<view style="height:420rpx;width:100%"></view>
+<!-- <view style="overflow:hidden;"> -->
+<tabbar current="1" />
+<!-- </view> -->

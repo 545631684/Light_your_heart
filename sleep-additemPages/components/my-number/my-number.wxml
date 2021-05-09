@@ -1,0 +1,30 @@
+<view class="content">
+<text class="weightText"></text><text class="weightText1">昨晚有夜醒吗？</text>
+</view>
+<view class="content1">
+<image src="../../assets/images/sleepimg/fenzu4.svg" class="bedSize"></image>
+<text class="lingText">夜醒次数及总时长(分钟)</text>
+<view class="rightF">
+    <text bindtap="isShowClick">{{newTimes[0]}}次{{newTimes[1]}}分钟</text>
+    <image src="/sleep-additemPages/assets/images/sleepimg/fanhui.svg" class="textBack"></image>
+  </view>
+</view>
+<view class="interval"></view>
+<!-- 弹框 -->
+<view class="container" hidden="{{isShow}}">  
+  <view class="contents" bindtap="isShowClick"></view>
+  <view class="textend topY">夜醒次数及总长</view>
+  <view class="interval topY3"></view>
+  <view class="page-body">
+    <picker-view indicator-style="height: 45px;" style="height:400rpx;width:100%;background:white" value="{{multiIndex}}" bindchange="bindMultiPickerColumnChange">
+          <picker-view-column>
+            <view wx:for="{{objectMultiArray[0]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex[0] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view wx:for="{{objectMultiArray[1]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex[1] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+        </picker-view>
+  </view>
+    <view class="interval topY2"></view>
+      <view class="textend topY1" bindtap="isShowClick">确定</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "test-list": "../../components/testList/index",
+    "load-bottom": "../../components/loadBottom/index"
+  }
+}

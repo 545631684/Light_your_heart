@@ -1,0 +1,26 @@
+<block wx:if="{{$taroCompReady}}">
+  <view class="{{'common-pd question-item ' + (show ? 'show' : '')}}">
+    <view class="question-item-title">{{title}}</view>
+    <view class="question-item-content">
+      <view class="{{'question-item-radio ' + (item.$original.FId === value.ItemId ? 'active' : '')}}" wx:key="FId"
+        bindtap="anonymousFunc0" wx:for="{{loopArray13}}" wx:for-item="item" wx:for-index="i" data-e-tap-so="this"
+        data-e-tap-a-a="{{item._$indexKey}}">
+        <view class="question-item-txt">{{item.$original.ItemOption}}</view>
+        <block wx:if="{{item.$original.FId === value.ItemId}}">
+          <at-icon compid="{{item.$compid__63}}"></at-icon>
+        </block>
+      </view>
+    </view>
+    <view class="question-item-btns">
+      <block wx:if="{{index > 0}}">
+        <at-button compid="{{$compid__64}}">上一题</at-button>
+      </block>
+      <block wx:if="{{value.ItemId && index < total - 1}}">
+        <at-button compid="{{$compid__65}}">下一题</at-button>
+      </block>
+    </view>
+    <block wx:if="{{value.ItemId && index === total - 1}}">
+      <at-button compid="{{$compid__66}}">提交测评</at-button>
+    </block>
+  </view>
+</block>

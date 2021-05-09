@@ -1,0 +1,5 @@
+<view class="seve">
+  <image src="../../assets/images/clockin/seve.png"></image>
+  <text>{{title}}</text>
+  <view bindtap="onSeve">知道啦！</view>
+</view>

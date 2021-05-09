@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "my-nav":"../../components/my-nav/my-nav",
+    "seve":"../../components/seve/seve"
+  },
+  "navigationBarTitleText": "",
+          "navigationStyle": "custom"
+          
+}

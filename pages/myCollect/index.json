@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "article-list": "../../components/articleList/index",
+    "load-bottom": "../../components/loadBottom/index"
+  },
+  "navigationBarTitleText": "我的收藏"
+}

@@ -1,0 +1,29 @@
+<!--sleep-mainPages/pages/doctor/doctor.wxml-->
+<view class="doctor_list">
+  <block wx:for="{{doctorList}}">
+    <view class="doctor_item">
+      <image wx:if="{{item.ImgUrl}}" src="{{item.ImgUrl}}" class="doctor_avator"></image>
+      <image wx:else src="/assets/images/avator.png" class="doctor_avator"></image>
+      <view class="doctor_info">
+        <view class="doctor_info_item">
+          <text class="doctor_info_title">医生名字：</text>
+          <text class="doctor_info_text">{{item.UserName}}</text>
+        </view>
+        <view class="doctor_info_item">
+          <text class="doctor_info_title">职称：</text>
+          <text class="doctor_info_text">{{item.Position}}</text>
+        </view>
+        <view class="doctor_info_item">
+          <text class="doctor_info_title">擅长：</text>
+          <text class="doctor_info_text">{{item.TagTitle}}</text>
+        </view>
+        <view class="doctor_info_item">
+          <text class="doctor_info_title">推荐指数：</text>
+          <image wx:for="{{item.Ratings}}" src="/assets/images/f_level_star.png" class="rating_img"></image>
+        </view>
+        <view class="preview_btn" data-id="{{item.id}}" catchtap="preview">点击预约</view>
+      </view>
+    </view>
+  </block>
+</view>
+<tabbar current="4" />

@@ -1,0 +1,6 @@
+<block wx:if="{{$taroCompReady}}">
+  <view style="{{anonymousState__temp}}">
+    <test-list compid="{{$compid__14}}"></test-list>
+    <load-bottom compid="{{$compid__15}}"></load-bottom>
+  </view>
+</block>

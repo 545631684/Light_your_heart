@@ -1,0 +1,33 @@
+/* pages/testStyle2/testStyle2.wxss */
+.title{
+    width:612rpx;
+    height:91rpx;
+    font-size:28rpx;
+    font-family:PingFangHK-Regular,PingFangHK;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:45rpx;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 49rpx;
+}
+.button{
+    width:598rpx;
+    height:90rpx;
+    background:linear-gradient(180deg,rgba(60,138,249,1) 0%,rgba(28,82,240,1) 100%);
+    box-shadow:0rpx 2rpx 4rpx 3rpx rgba(47,116,245,0.52);
+    border-radius:58rpx;
+    margin: 100rpx auto;    
+    font-size:34rpx;
+    text-align: center;
+    font-family:PingFangHK-Medium,PingFangHK;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:90rpx;
+}
+.tips{
+    font-size: 24rpx;
+    color: #666;
+    padding-left: 74rpx;
+    margin-top: -50rpx;
+}

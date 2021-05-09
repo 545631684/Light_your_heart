@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "at-avatar": "../../npm/taro-ui/dist/weapp/components/avatar/index",
+    "at-rate": "../../npm/taro-ui/dist/weapp/components/rate/index",
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index",
+    "at-tag": "../../npm/taro-ui/dist/weapp/components/tag/index"
+  },
+  "navigationBarTitleText": "医生详情"
+}

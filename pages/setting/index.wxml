@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view class="pages-setting"><view class="pages-setting-version">当前版本：Version 1.0</view><at-button compid="{{$compid__42}}">清除缓存并退出</at-button></view></block>

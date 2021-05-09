@@ -1,0 +1,1 @@
+!function(s,r){"use strict";var t=r("./stringify.js"),e=r("./parse.js"),i=r("./formats.js");s.exports={formats:i,parse:e,stringify:t}}(module,(exports,require));

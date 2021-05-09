@@ -1,0 +1,168 @@
+<!--pages/myInfoTest/myInfoTest.wxml-->
+<view class="container">
+  <!-- 第一题 -->
+  <view class="questions question1" wx:if="{{!showResult && questionNumber == 1}}" data-questionnumber="1">
+    <view class="progress_box">
+      <view class="progress">
+        <view class="progress_blue"></view>
+        <view class="progress_percent">3.7%</view>
+      </view>
+      <view class="progress_text">
+        <text class="progress_text_blue">1</text>/27
+      </view>
+    </view>
+    <view class="question_box">
+      <view class="question_icon">
+        <image src="https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_ic.png"></image>
+      </view>
+      <view class="question_title">1. 您的年龄</view>
+      <view class="answer_item {{questionNumber1 == '18—35岁' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="1" data-answernumber="18—35岁">18—35岁</view>
+      <view class="answer_item {{questionNumber1 == '36—59岁' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="1" data-answernumber="36—59岁">36—59岁</view>
+      <view class="answer_item {{questionNumber1 == '60—75岁' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="1" data-answernumber="60—75岁">60—75岁</view>
+      <view class="answer_item {{questionNumber1 == '76岁及以上' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="1" data-answernumber="76岁及以上">76岁及以上</view>
+    </view>
+    <view class="next_question" wx:if="{{questionNumber1}}" catchtap="chooseAnswer" data-questionnumber="1" data-answernumber="{{questionNumber1}}">下一题</view>
+  </view>
+  <!-- 第二题 -->
+  <view class="questions question2" wx:if="{{!showResult && questionNumber == 2}}" data-questionnumber="2">
+    <view class="progress_box">
+      <view class="progress">
+        <view class="progress_blue"></view>
+        <view class="progress_percent">7.4%</view>
+      </view>
+      <view class="progress_text">
+        <text class="progress_text_blue">2</text>/27
+      </view>
+    </view>
+    <view class="question_box">
+      <view class="question_icon">
+        <image src="https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_ic.png"></image>
+      </view>
+      <view class="question_title">2. 您的性别</view>
+      <view class="answer_item {{questionNumber2 == '男' ?'checked':''}}" catchtap="chooseAnswer" data-questionnumber="2"
+        data-answernumber="男">男</view>
+      <view class="answer_item {{questionNumber2 == '女' ?'checked':''}}" catchtap="chooseAnswer" data-questionnumber="2"
+        data-answernumber="女">女</view>
+    </view>
+    <view class="back_question" catchtap="backQuestion" data-questionnumber="2">上一题</view>
+    <view class="next_question" wx:if="{{questionNumber2}}" catchtap="chooseAnswer" data-questionnumber="2" data-answernumber="{{questionNumber2}}">下一题</view>
+  </view>
+  <!-- 第三题 -->
+  <view class="questions question3" wx:if="{{!showResult && questionNumber == 3}}" data-questionnumber="3">
+    <view class="progress_box">
+      <view class="progress">
+        <view class="progress_blue"></view>
+        <view class="progress_percent">11.1%</view>
+      </view>
+      <view class="progress_text">
+        <text class="progress_text_blue">3</text>/27
+      </view>
+    </view>
+    <view class="question_box">
+      <view class="question_icon">
+        <image src="https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_ic.png"></image>
+      </view>
+      <view class="question_title">3. 您的教育程度</view>
+      <view class="answer_item {{questionNumber3 == '小学' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="3" data-answernumber="小学">小学</view>
+      <view class="answer_item {{questionNumber3 == '初中' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="3" data-answernumber="初中">初中</view>
+      <view class="answer_item {{questionNumber3 == '高中' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="3" data-answernumber="高中">高中</view>
+      <view class="answer_item {{questionNumber3 == '本科' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="3" data-answernumber="本科">本科</view>
+      <view class="answer_item {{questionNumber3 == '硕士' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="3" data-answernumber="硕士">硕士</view>
+      <view class="answer_item {{questionNumber3 == '博士' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="3" data-answernumber="博士">博士</view>
+    </view>
+    <view class="back_question" catchtap="backQuestion" data-questionnumber="3">上一题</view>
+    <view class="next_question" wx:if="{{questionNumber3}}" catchtap="chooseAnswer" data-questionnumber="3" data-answernumber="{{questionNumber3}}">下一题</view>
+  </view>
+  <!-- 第四题 -->
+  <view class="questions question4" wx:if="{{!showResult && questionNumber == 4}}" data-questionnumber="4">
+    <view class="progress_box">
+      <view class="progress">
+        <view class="progress_blue"></view>
+        <view class="progress_percent">14.8%</view>
+      </view>
+      <view class="progress_text">
+        <text class="progress_text_blue">4</text>/27
+      </view>
+    </view>
+    <view class="question_box">
+      <view class="question_icon">
+        <image src="https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_ic.png"></image>
+      </view>
+      <view class="question_title">4. 您的就业状况</view>
+      <view class="answer_item {{questionNumber4 == '全职' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="4" data-answernumber="全职">全职</view>
+      <view class="answer_item {{questionNumber4 == '兼职' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="4" data-answernumber="兼职">兼职</view>
+      <view class="answer_item {{questionNumber4 == '无业' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="4" data-answernumber="无业">无业</view>
+      <view class="answer_item {{questionNumber4 == '退休' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="4" data-answernumber="退休">退休</view>
+      <view class="answer_item {{questionNumber4 == '学生' ?'checked':''}}" catchtap="chooseAnswer"
+        data-questionnumber="4" data-answernumber="学生">学生</view>
+    </view>
+    <view class="back_question" catchtap="backQuestion" data-questionnumber="4">上一题</view>
+    <view class="next_question" wx:if="{{questionNumber4}}" catchtap="chooseAnswer" data-questionnumber="4" data-answernumber="{{questionNumber4}}">下一题</view>
+  </view>
+  <!-- 匹兹堡题 -->
+  <view class="questions question5" wx:if="{{!showResult && questionNumber >= 5}}"
+    data-questionnumber="{{currentQuesIdx}}">
+    <view class="progress_box">
+      <view class="progress">
+        <view class="progress_blue" style="width:{{percent}}"></view>
+        <view class="progress_percent">{{percent}}</view>
+      </view>
+      <view class="progress_text">
+        <text class="progress_text_blue">{{currentQuesIdx+5}}</text>/27
+      </view>
+    </view>
+    <view class="question_box">
+      <view class="question_icon">
+        <image src="https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_ic.png"></image>
+      </view>
+      <view class="question_title">{{test[currentQuesIdx].Content}}</view>
+      <view class="answer_item {{test[currentQuesIdx].answerId == item.id ?'checked':''}}"
+        wx:for="{{test[currentQuesIdx].Items}}" catchtap="chooseAnswerPzb" data-questionnumber="{{currentQuesIdx}}"
+        data-answernumber="{{item.id}}" data-testscore="{{item.TestScore}}">{{item.Option}}</view>
+    </view>
+    <view class="back_question" catchtap="backQuestionPzb" data-questionnumber="{{currentQuesIdx}}">上一题</view>
+    <view class="next_question" wx:if="{{test[currentQuesIdx].answerId && currentQuesIdx!=22}}" catchtap="nextQuestion" data-questionnumber="{{currentQuesIdx}}">下一题</view>
+    <view class="btn" catchtap="submit" wx:if="{{currentQuesIdx==22}}">提交</view>
+  </view>
+</view>
+<view class="tips_alert" wx:if="{{!showResult && questionNumber == 5 && showTipsAlert}}" catchtap="closeTips">
+  <view class="tips_cont">
+    <view class="tips_title">提示</view>
+    <view class="tips_text">以下的问题仅与您的睡眠习惯有关。请回忆过去一个月里的多数晚上的睡眠和白天的精力情况，要准确回答以下所有的问题，才能了解您的睡眠质量哦。</view>
+  </view>
+</view>
+<view class="result_box" wx:if="{{showResult}}">
+<!-- <view class="result_box"> -->
+  <view class="score_box">
+    <view class="score_title">匹兹堡睡眠质量指数（PSQI）</view>
+    <view class="score"><text class="score_blue">{{score}}</text>分</view>
+  </view>
+  <view class="cont">
+    <view>0-5分：睡眠质量很好</view>
+    <view>6-10分：睡眠质量还行</view>
+    <view>11-15分：睡眠质量一般</view>
+    <view>16-21分：睡眠质量很差</view>
+  </view>
+  <view class="fenxi">
+    <image class="fenxi_ic" src="https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_order.png">
+    </image>
+    <view class="fenxi_title">测评分值分析</view>
+  </view>
+    <view class='radarContainer'>
+      <canvas class='radarCanvas' canvas-id='radarCanvas'></canvas>
+    </view>
+</view>

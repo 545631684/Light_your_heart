@@ -1,0 +1,40 @@
+<!--pages/adhereclockin/adhereclockin.wxml-->
+<view class="page">
+    <view class="top">
+       <week />
+    </view>
+
+    <view class="date">
+        <view class="title">           
+            <view class="jin" bindtap="xiguan">添加任务</view>            
+        </view>
+         <swiper  circular display-multiple-items="{{state}}" bindchange="change"  indicator-color="#EBEBEB" indicator-active-color="#4671F4">
+            <swiper-item  wx:for="{{imgList}}" wx:key="item" bindtap="changeClick" data-index="{{index}}"  data-name="{{index}}">
+                <view class="itembox {{clickIndex == index ?'active' : ''}} " >
+                    <view class="img">
+                        <image src="{{item.ItemUrl}}" style="height:116rpx;width:116rpx"></image>
+                    </view>
+                    <text class="title">{{item.ItemName}} </text>
+                    <text class="days">已打卡{{item.ClockCount}}天</text>
+                </view>
+            </swiper-item>
+         </swiper>   
+         <view class="docbox">
+            <view wx:for="{{imgList}}" class="{{currentIndex == index ?'active' : ''}}"></view>
+         </view>      
+    </view>
+
+
+    <view class="bottom">
+        <view class="title">{{imgList[lastIndex].ItemName}}</view>
+        <view class="cont">
+        <view>
+            {{imgList[lastIndex].Explain}}
+        </view></view>
+    </view>
+    <view class="btn2"  wx:if="{{imgList[lastIndex].IsClockIn != 0}}">已打卡</view>
+    <view class="btn" bind:tap="btnclick"  wx:else>打卡</view>
+    
+</view>
+<seve  wx:if="{{isShow}}"  bind:onSeve="close" title="恭喜你 打卡成功!"/>
+

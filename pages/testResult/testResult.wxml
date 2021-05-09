@@ -1,0 +1,11 @@
+<view class="result_box" wx:if="{{showResult}}">
+  <view class="score_box">
+    <view class="score_title">{{title}}</view>
+    <view class="score"><text class="score_blue">{{score}}</text>分</view>
+  </view>
+  <view class="fenxi">
+    <image class="fenxi_ic" src="https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_order.png">
+    </image>
+    <view class="fenxi_title">测评分值分析</view>
+  </view>
+</view>

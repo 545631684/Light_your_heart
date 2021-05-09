@@ -1,0 +1,19 @@
+/* pages/evaluateList/index2/index2.wxss */
+
+.btn{
+  width:600rpx;
+  height:84rpx;
+  background:linear-gradient(180deg,rgba(60,138,249,1) 0%,rgba(28,82,240,1) 100%);
+  box-shadow:0rpx 2rpx 4rpx 3rpx rgba(47,116,245,0.52);
+  border-radius:42rpx;
+  font-size:36rpx;
+  font-family:PingFangHK-Regular,PingFangHK;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:84rpx;
+  letter-spacing:1rpx;
+  text-align: center;
+  margin: 30rpx auto;
+
+ 
+}

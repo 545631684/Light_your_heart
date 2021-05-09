@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "seve":"../../components/seve/seve",
+    "week":"../../components/week/week"
+  },
+  "navigationBarTitleText": "打卡"
+}
