@@ -1,0 +1,26 @@
+<!--pages/RecordSleep/RecordSleep.wxml-->
+<week date="{{gaidate}}" />
+<view class="data_month">
+  <text class="rightFloct"><text class="redColor">{{numClick}}</text>项待记录</text>
+</view>
+<my-record bind:setTips="setTips" bind:bindTimeChange="bindTimeChange" bind:bindTimeChange1="bindTimeChange1"
+  bind:bindTimeChange2="bindTimeChange2" bind:bindTimeChange3="bindTimeChange3" collection="{{collections}}"
+  timesDay="{{gaidate}}" />
+<my-number bind:bindPickerChange="bindPickerChange" collection="{{collections}}" />
+<my-quality bind:facehandler="facehandler" collection="{{collections}}" />
+<my-factor bind:choose="choose" bind:choose1="choose1" bind:choose2="choose2" bind:choose3="choose3"
+  bind:choose4="choose4" bind:choose5="choose5" bind:choose6="choose6" bind:choose7="choose7"
+  collection="{{collections}}" />
+<van-toast id="van-toast" />
+<van-cell title="保存" bind:click="showPopup" bind:tap="btntijiao"
+  custom-style="width:100%;height:96rpx;background:#4052e7;color:white;font-size:36rpx;line-height:70rpx;border-radius: none;text-align:center;" />
+<van-popup show="{{ show }}" bind:close="onClose"
+  custom-style="border-radius: 28rpx;width:523rpx;height:600rpx;border-radius: 28rpx;background:none;">
+  <view style="width:100%;height:505rpx;background:rgba(255,255,255,1);position:relative;border-radius: 28rpx">
+    <image src="/sleep-additemPages/assets/images/sleepimg/tishi.svg"
+      style="width:191rpx;height:191rpx;margin:50rpx 165rpx;"></image>
+    <text class="end_one">恭喜您! 数据保存成功</text>
+    <text class="end_two" bind:tap="onClose">知道了!</text>
+  </view>
+  <image src="/sleep-additemPages/assets/images/sleepimg/close_two.svg" class="end_img" bind:tap="onClose"></image>
+</van-popup>

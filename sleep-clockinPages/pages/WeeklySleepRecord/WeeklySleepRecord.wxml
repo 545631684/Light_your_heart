@@ -1,0 +1,54 @@
+<!--pages/WeeklySleepRecord/WeeklySleepRecord.wxml-->
+<view class="nav">
+    <my-nav bg="../../assets/images/weeklysleeprecord/bg.png" backbtncolor="white" />
+</view>
+<view class="topcont">
+    <text class="title">最近一周睡眠记录\n</text>
+    <text class="date">{{last}}~{{now}}</text>
+    <view class="fenxi">
+        <navigator url="/sleep-mainPages/pages/day/day">
+            <image src="../../assets/images/weeklysleeprecord/fenxi.png"></image>
+            睡眠分析
+        </navigator>
+    </view>
+</view>
+
+<view class="bodycont">
+
+    <view class="box" wx:for="{{list}}" wx:key="item">
+        <view class="fenge" wx:if="{{index !=0 }}"></view>
+        <view class="doc"></view>
+        <view class="title">
+            {{item.sleep.CreateTime}}
+        </view>
+        <view class="cont">
+            <view class="moon">
+                <image src="../../assets/images/weeklysleeprecord/moons.png" style="position:relative;top:5rpx"></image>
+                <text class="littitle">睡眠日记</text>
+                <view wx:if="{{item.sleep.FId}}" class="content">
+                    {{item.sleep.SleepingTime}}~{{item.sleep.WakeUpTime}}
+                </view>
+
+            </view>
+            <view class="sun">
+                <image src="../../assets/images/weeklysleeprecord/suns.png"></image>
+                <text class="littitle">白天行为</text> <text class="zhuangtai"></text><text>\n</text>
+                <!-- <text class="content" wx:if="{{item.Behavior.FId}}">{{item.Behavior.msg}}</text> -->
+                <!-- <view class="butian" wx:else>
+                <navigator url="/sleep-additemPages/pages/dayTime/dayTime?date={{item.sleep.CreateTime}}&code={{item.sleep.ActivityCode}}">我要补填
+                </navigator>
+            </view> -->
+            </view>
+        </view>
+        <view class="butian" wx:if="{{!item.sleep.FId}}">
+            <navigator url="/sleep-additemPages/pages/RecordSleep2/RecordSleep?date={{item.sleep.CreateTime}}">我要补填
+            </navigator>
+        </view>
+        <!-- <view class="butian" wx:else>
+            <navigator
+                url="/sleep-additemPages/pages/dayTime/dayTime?date={{item.sleep.CreateTime}}&code={{item.sleep.ActivityCode}}">
+                我要补填
+            </navigator>
+        </view> -->
+    </view>
+</view>

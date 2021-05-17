@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "testStyleItem1":"../testStyleItem1/testStyleItem1"
+    }
+}

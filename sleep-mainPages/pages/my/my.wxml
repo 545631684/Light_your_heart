@@ -1,0 +1,37 @@
+<view class="my_cont">
+  <view class="my_info">
+    <image class="avatar" wx:if="{{avatarUrl}}" src="{{avatarUrl}}"></image>
+    <image class="avatar" wx:else src="/assets/images/avator.png"></image>
+    <view class="my_phone" wx:if="{{nickName}}">{{nickName}}</view>
+    <button wx:else bindtap="getUserProfile"> 获取头像昵称 </button>
+      
+  </view>
+  <view class="my_num">
+    <view class="my_num_item" catchtap="myMeasurement">
+      <view class="number">{{test_count}}</view>
+      <view>次测评</view>
+    </view>
+    <view class="my_num_item">
+      <view class="number">{{interview_count}}</view>
+      <view>次访谈</view>
+    </view>
+  </view>
+  <view class="tab_item">
+    <button open-type="share" class="share_btn"></button>
+    <view>推荐给朋友</view>
+    <image class="arrow" src="../../assets/images/college/fanhui-4.png"></image>
+  </view>
+  <view class="tab_item" catchtap="toSecondPage" data-title="{{'帮助中心'}}">
+    <view>帮助中心</view>
+    <image class="arrow" src="../../assets/images/college/fanhui-4.png"></image>
+  </view>
+  <view class="tab_item" catchtap="toSecondPage" data-title="{{'系统设置'}}">
+    <view>系统设置</view>
+    <image class="arrow" src="../../assets/images/college/fanhui-4.png"></image>
+  </view>
+  <view class="tab_item" catchtap="toSecondPage" data-title="{{'隐私政策'}}">
+    <view>隐私政策</view>
+    <image class="arrow" src="../../assets/images/college/fanhui-4.png"></image>
+  </view>
+</view>
+<tabbar current="3" />

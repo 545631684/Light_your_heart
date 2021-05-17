@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "my-record":"../../components/lihui-record/lihui-record",
+    "my-number":"../../components/my-number/my-number",
+    "my-quality":"../../components/my-quality/my-quality",
+    "my-factor":"../../components/my-factor/my-factor",
+    "week":"../../components/week/week",
+    "van-popup": "/miniprogram_npm/@vant/weapp/popup/index",
+    "van-cell": "/miniprogram_npm/@vant/weapp/cell/index"
+  },
+  "navigationBarTitleText": "请回忆并记录昨夜睡眠情况"
+}

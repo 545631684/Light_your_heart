@@ -1,0 +1,118 @@
+<!--components/my-record/my-record.wxml-->
+<view class="section">
+  <view mode="time" value="{{time}}" catchtap="bindTimeChange">
+    <text class="lingText">何时上床</text>
+      <image src="../../assets/images/sleepimg/shangchuang.svg" class="bedSize"></image>
+      <image src="../../assets/images/sleepimg/fanhui.svg" class="textBack"></image>
+      <text class="rightF {{newTimes[1] !== '待记录' ? 'blueText' : ''}}" catchtap="isShowClick">{{newTimes[1]}}{{newTimes[2]}}</text>
+  </view>
+</view>
+<view class="section">
+  <view mode="time" value="{{time}}" catchtap="bindTimeChange1" >
+    <text class="lingText">何时入睡</text>
+    <image src="../../assets/images/sleepimg/shuizhao.svg" class="bedSize1"></image>
+    <image src="../../assets/images/sleepimg/fanhui.svg" class="textBack"></image>
+      <text class="rightF {{newTimes1[1] !== '待记录' ? 'blueText' : ''}}"  catchtap="isShowClick1">{{newTimes1[1]}}{{newTimes1[2]}}</text>
+  </view>
+</view>
+<view class="section">
+  <view mode="time" value="{{time}}" catchtap="bindTimeChange2" >
+    <text class="lingText">今早睡醒</text>
+    <image src="../../assets/images/sleepimg/shuixing.svg" class="bedSize2"></image>
+    <image src="../../assets/images/sleepimg/fanhui.svg" class="textBack"></image>
+      <text class="rightF {{newTimes2[1] !== '待记录' ? 'blueText' : ''}}"  bindtap="isShowClick2">{{newTimes2[1]}}{{newTimes2[2]}}</text>
+  </view>
+</view>
+<view class="section">
+  <view mode="time" value="{{time}}" catchtap="bindTimeChange3" >
+    <text class="lingText">今早起床</text>
+    <image src="../../assets/images/sleepimg/qichuang.svg" class="bedSize3"></image>
+    <image src="../../assets/images/sleepimg/fanhui.svg" class="textBack"></image>
+     <text class="rightF {{newTimes3[1] !== '待记录' ? 'blueText' : ''}}"  bindtap="isShowClick3">{{newTimes3[1]}}{{newTimes3[2]}}</text>
+  </view>
+</view>
+<!-- 弹框1 -->
+<view class="container" hidden="{{isShow}}">  
+  <view class="contents"  catchtap="isShowClick"></view>
+  <view class="textend topY">何时上床</view>
+  <view class="interval topY3"></view>
+  <view class="page-body">
+    <picker-view indicator-style="height: 45px;" style="height:400rpx;width:100%;background:white" value="{{multiIndex}}" bindchange="bindTimeChange">
+          <picker-view-column>
+            <view wx:for="{{dayArry}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex[0] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view wx:for="{{hourseArry}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex[1] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view wx:for="{{minArray}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex[2] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+        </picker-view>
+  </view>
+    <view class="interval topY2"></view>
+      <view class="textend topY1" catchtap="hidePick">确定</view>
+</view>
+<!-- 弹框2 -->
+<view class="container" hidden="{{isShow1}}">  
+  <view class="contents" catchtap="isShowClick1"></view>
+  <view class="textend topY">何时入睡</view>
+  <view class="interval topY3"></view>
+  <view class="page-body">
+    <picker-view indicator-style="height: 45px;" style="height:400rpx;width:100%;background:white" value="{{multiIndex1}}" bindchange="bindTimeChange1">
+          <picker-view-column>
+            <view wx:for="{{helpArry[0]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex1[0] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view wx:for="{{helpArry[1]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex1[1] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+           <picker-view-column>
+            <view wx:for="{{helpArry[2]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex1[2] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+        </picker-view>
+  </view>
+    <view class="interval topY2"></view>
+      <view class="textend topY1" catchtap="isShowClick1">确定</view>
+</view>
+<!-- 弹框3 -->
+<view class="container" hidden="{{isShow2}}">  
+  <view class="contents" catchtap="isShowClick2"></view>
+  <view class="textend topY">今早睡醒</view>
+  <view class="interval topY3"></view>
+  <view class="page-body">
+    <picker-view indicator-style="height: 45px;" style="height:400rpx;width:100%;background:white" value="{{multiIndex2}}" bindchange="bindTimeChange2">
+          <picker-view-column>
+            <view wx:for="{{objectMultiArray[1]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex2[0] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view wx:for="{{objectMultiArray[2]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex2[1] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+           <!-- <picker-view-column>
+            <view wx:for="{{objectMultiArray[2]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex2[2] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column> -->
+        </picker-view>
+  </view>
+    <view class="interval topY2"></view>
+      <view class="textend topY1" catchtap="isShowClick2">确定</view>
+</view>
+<!-- 弹框4 -->
+<view class="container" hidden="{{isShow3}}">  
+  <view class="contents" catchtap="isShowClick3"></view>
+  <view class="textend topY">今早起床</view>
+  <view class="interval topY3"></view>
+  <view class="page-body">
+    <picker-view indicator-style="height: 45px;" style="height:400rpx;width:100%;background:white" value="{{multiIndex3}}" bindchange="bindTimeChange3">
+          <picker-view-column>
+            <view wx:for="{{objectMultiArray[1]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex3[0] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view wx:for="{{objectMultiArray[2]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex3[1] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column>
+           <!-- <picker-view-column>
+            <view wx:for="{{objectMultiArray[2]}}" wx:key="item" style="line-height: 45px; text-align: center;font-size:32rpx;font-family:PingFangHK-Regular,PingFangHK;font-weight:400;letter-spacing:1px;" class="{{item.id == multiIndex3[2] ? 'colorGB' : ''}}">{{item.name}}</view>
+          </picker-view-column> -->
+        </picker-view>
+  </view>
+    <view class="interval topY2"></view>
+      <view class="textend topY1" catchtap="isShowClick3">确定</view>
+</view>
+<view class="interval"></view>

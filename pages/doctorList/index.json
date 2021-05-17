@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "expert-list": "./ExpertList"
+  },
+  "navigationBarTitleText": "推荐医生"
+}

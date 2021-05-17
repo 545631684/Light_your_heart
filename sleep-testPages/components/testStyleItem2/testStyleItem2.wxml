@@ -1,0 +1,22 @@
+<!--components/testStyle2/testStyle2.wxml-->
+<view class="box">
+    <text class="title">{{index}}丶{{titles}}</text>
+    <view class="tip">{{tip}}</view>
+    <swiper class="select" display-multiple-items="7" circular bindchange="change" wx:if="{{answer != 1}}">
+        <swiper-item wx:for="{{11}}" wx:key="item" class="{{currentIndex == index ? 'active' : ''}}">
+            <view class="bor"></view>
+            <view class="item">                
+                {{index}}
+            </view>
+        </swiper-item>
+    </swiper>
+    <swiper class="select" display-multiple-items="3" circular bindchange="change2" wx:else>
+        <swiper-item wx:for="{{5}}" wx:key="item" class="{{currentIndex == index ? 'active' : ''}}">
+            <view class="bor"></view>
+            <view class="item">                
+                {{index}}
+            </view>
+        </swiper-item>
+    </swiper>
+</view>
+

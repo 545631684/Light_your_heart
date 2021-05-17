@@ -1,0 +1,124 @@
+{
+  "pages": [
+    "pages/openIndex/openIndex",
+    "pages/doctor/doctor",
+    "pages/myInfoTest/myInfoTest",
+    "pages/starIndex/starIndex",
+    "pages/index/index",
+    "pages/home/index",
+    "pages/doctorList/index",
+    "pages/doctorDetail/index",
+    "pages/evaluateMenu/index",
+    "pages/evaluate/index",
+    "pages/evaluateDesc/index",
+    "pages/evaluateList/index",
+    "pages/evaluateList/index2/index2",
+    "pages/evaluateResult/index",
+    "pages/evaluateDetail/index",
+    "pages/hypnosisMenu/index",
+    "pages/health/index",
+    "pages/articleDetail/index",
+    "pages/my/index",
+    "pages/myDetail/index",
+    "pages/myEvaluate/index",
+    "pages/myCollect/index",
+    "pages/myConsult/index",
+    "pages/myDoctor/index",
+    "pages/setting/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/testResult/testResult",
+    "pages/bind/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#999",
+    "selectedColor": "#3697ff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "assets/images/home2.png",
+        "selectedIconPath": "assets/images/home2-on.png"
+      },
+      {
+        "pagePath": "pages/health/index",
+        "text": "健康之路",
+        "iconPath": "assets/images/health2.png",
+        "selectedIconPath": "assets/images/health2-on.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "assets/images/my2.png",
+        "selectedIconPath": "assets/images/my2-on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "subpackages": [
+    {
+      "root": "sleep-mainPages",
+      "pages": [
+        "pages/college/college",
+        "pages/day/day",
+        "pages/my/my",
+        "pages/my/secondPage/secondPage",
+        "pages/modifyuserinfo/index",
+        "pages/set/set",
+        "pages/doctor/doctor"
+      ]
+    },
+    {
+      "root": "sleep-additemPages",
+      "pages": [
+        "pages/addtime/addtime",
+        "pages/dayTime/dayTime",
+        "pages/dayBehavior/dayBehavior",
+        "pages/RecordSleep/RecordSleep",
+        "pages/RecordSleep2/RecordSleep"
+      ]
+    },
+    {
+      "root": "sleep-contentPages",
+      "pages": [
+        "pages/coursesCon/coursesCon",
+        "pages/coursesCon2/coursesCon2",
+        "pages/myCourses/myCourses",
+        "pages/SelectDefaultTraining/SelectDefaultTraining",
+        "pages/TrainingContent/TrainingContent"
+      ]
+    },
+    {
+      "root": "sleep-clockinPages",
+      "pages": [
+        "pages/adhereclockin/adhereclockin",
+        "pages/clockin/clockin",
+        "pages/doctor/doctor",
+        "pages/somnus/somnus",
+        "pages/WeeklySleepRecord/WeeklySleepRecord"
+      ]
+    },
+    {
+      "root": "sleep-testPages",
+      "pages": [
+        "pages/TestQuestion1/TestQuestion1",
+        "pages/TestQuestion2/TestQuestion2",
+        "pages/TestQuestion3/TestQuestion3",
+        "pages/TestResult1/index",
+        "pages/TestList/TestList",
+        "pages/TestResult2/index",
+        "pages/MyTest/MyTest",
+        "pages/Myresult/Myresult",
+        "pages/TestBox/TestBox"
+      ]
+    }
+  ]
+}

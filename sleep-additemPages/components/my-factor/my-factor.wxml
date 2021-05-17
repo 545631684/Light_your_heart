@@ -1,0 +1,15 @@
+<!--components/my-f1/my-f1.wxml-->
+<view class="content">
+  <text class="weightText"></text><text class="weightText1">昨夜睡不好是因为以下情况吗?</text><text class="weightText2">(若无可不选)</text>
+</view>
+<view class="content1">
+  <image src="../../assets/images/sleepimg/yxys.svg" class="yxys"></image> 
+  <text id="{{goods[0].id}}" class="textpos_a 'texts {{goods[0].checked ? 'choiceFace' : ''}} " bindtap="choose">{{goods[0].text}}</text>
+  <text id="{{goods[1].id}}" class="textpos_b  'texts {{goods[1].checked ? 'choiceFace' : ''}} " bindtap="choose1">{{goods[1].text}}</text>
+  <text id="{{goods[2].id}}" class="textpos_c  'texts {{goods[2].checked ? 'choiceFace' : ''}} " bindtap="choose2">{{goods[2].text}}</text>
+  <text id="{{goods[3].id}}" class="textpos_d  'texts {{goods[3].checked ? 'choiceFace' : ''}} " bindtap="choose3">{{goods[3].text}}</text>
+  <text id="{{goods[4].id}}" class="textpos_e  'texts {{goods[4].checked ? 'choiceFace' : ''}} " bindtap="choose4">{{goods[4].text}}</text>
+  <text id="{{goods[5].id}}" class="textpos_f  'texts {{goods[5].checked ? 'choiceFace' : ''}} " bindtap="choose5">{{goods[5].text}}</text>
+  <text id="{{goods[6].id}}" class="textpos_g  'texts {{goods[6].checked ? 'choiceFace' : ''}}" bindtap="choose6">{{goods[6].text}}</text>
+  <text id="{{goods[7].id}}" class="textpos_h  'texts {{goods[7].checked ? 'choiceFace' : ''}}" bindtap="choose7">{{goods[7].text}}</text>
+</view>

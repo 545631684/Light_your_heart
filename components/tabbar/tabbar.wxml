@@ -1,0 +1,30 @@
+<view class="box">
+  <view class="item" bind:tap="nav1" style="margin-left:-8rpx">
+  
+      <image wx:if="{{current == 1}}" class="img11 img" src="/assets/images/tabbar/home-active.png" ></image>
+      <image wx:else class="img11 img" src="/assets/images/tabbar/home.png"></image>
+      <text class="{{current==1 ? 'active' : ''}}">\n好梦之旅</text>
+ 
+  </view>
+  <view class="item" bind:tap="nav4" style="margin-left:71rpx">
+  
+      <image wx:if="{{current == 4}}" class="img1 img" src="/assets/images/tabbar/yin-active.png " ></image>
+      <image wx:else class="img1 img" src="/assets/images/tabbar/yin.png" ></image>
+      <text class="{{current==1 ? 'active' : ''}}">\n在线访谈</text>
+      <!-- <van-toast id="van-toast" /> -->
+  </view>
+  <view class="item"  bind:tap="nav2"  style="margin-left:96rpx">
+  
+    <image wx:if="{{current == 2}}" class="img2 img" src="/assets/images/tabbar/fenxi-active.png"></image>
+    <image wx:else class="img2 img" src="/assets/images/tabbar/fenxi.png" style=""></image>
+    <text class="{{current==2 ? 'active' : ''}}">\n睡眠分析</text>
+ 
+  </view>
+  <view class="item" bind:tap="nav3"  style="margin-left:71rpx">
+    <image wx:if="{{current == 3}}" class="img3 img" src="/assets/images/tabbar/me-active.png"></image>
+    <image wx:else class="img3 img" src="/assets/images/tabbar/me.png"></image>
+    <text class="{{current==3 ? 'active' : ''}}">\n我的</text>
+  </view>
+</view>
+
+

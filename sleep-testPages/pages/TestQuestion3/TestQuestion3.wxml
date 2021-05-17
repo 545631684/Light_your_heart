@@ -1,0 +1,32 @@
+<!--pages/TestQuestion/TestQuestion.wxml-->
+<!-- <block wx:for="{{list}}">
+  <testStyle1 question="{{item.Content}}" answer="{{item.Items}}" bind:myEvent="result" title="{{title}}" />
+</block> -->
+
+<!--components/testStyle1/testStyle1.wxml-->
+<text class="title">{{title}}</text>
+<!-- <rich-text nodes="{{title}}" class="title"></rich-text> -->
+<!-- <view>{{CourseDesc}}</view> -->
+<view class="box" wx:for="{{list}}" wx:for-index="listIndex">
+  <view class="title">{{item.Content}}</view>
+  <radio-group class="inner ">
+    <label class="selItem {{item.answerId == answerItem.id ? 'active' : ''}}" wx:for="{{item.Items}}" wx:for-item="answerItem"  catchtap="chooseAnswer" data-index="{{listIndex}}" data-answerid="{{answerItem.id}}" data-testscore="{{answerItem.TestScore}}">
+      <radio value="{{answerItem.Option}}" style="visibility:hidden" />
+      <view class="doc">{{answerItem.itemchose}}</view>
+      <view class="text">{{answerItem.Option}}</view>
+    </label>
+  </radio-group>
+</view>
+<!-- <view class="box" wx:for="{{list}}">
+  <view class="title">{{item.Content}}</view>
+  <radio-group bindchange="radioChange" class="inner ">
+    <label class="selItem {{currentSel == item.s ? 'active' : ''}}" wx:for="{{item.Items}}" wx:for-key="answerItem">
+      <radio value="{{answerItem.ItemOption}}" style="visibility:hidden" />
+      <view class="doc">{{answerItem.ItemOption}}</view>
+      <view class="text" wx:for="{{item.Items}}" wx:for-item="items" wx:key="items"
+        wx:for-index="indexs">{{items.ItemOption}}</view>
+    </label>
+  </radio-group>
+</view> -->
+
+<view class="button" bindtap="tijiao">提交</view>

@@ -1,0 +1,45 @@
+/* components/testStyle1/testStyle1.wxss */
+.title{
+    display: block;
+    width:612rpx;
+    height:137rpx;
+    font-size:28rpx;
+    font-family:PingFangHK-Regular,PingFangHK;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:45rpx;
+    margin: 0 auto;
+    margin-top: 49rpx;
+    text-align: center;
+}
+.button{
+    width:598rpx;
+    height:90rpx;
+    background:linear-gradient(180deg,rgba(60,138,249,1) 0%,rgba(28,82,240,1) 100%);
+    box-shadow:0rpx 2rpx 4rpx 3rpx rgba(47,116,245,0.52);
+    border-radius:58rpx;
+    margin:79rpx auto ;
+    font-size:34rpx;
+    font-family:PingFangHK-Medium,PingFangHK;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:90rpx;
+    text-align: center;
+}
+.tip{
+    position: fixed;
+    bottom: 667rpx;
+    left: 50%;
+    margin-left: -150rpx;
+    width: 300rpx;
+    height: 84rpx;      
+    font-size:28rpx;
+    font-family:PingFangHK-Medium,PingFangHK;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:84rpx;
+    text-align: center;
+    background:rgba(0,0,0,1);
+    border-radius:11rpx;
+    opacity:0.6505;
+}

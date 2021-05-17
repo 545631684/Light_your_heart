@@ -1,0 +1,12 @@
+<!--components/my-quality/my-quality.wxml-->
+<view class="content">
+<text class="weightText"></text><text class="weightText1">今日起床后感觉如何?</text>
+</view>
+<view class="flexView">
+  <view wx:for="{{faceList}}" wx:key="index" id='{{item.id}}' bind:tap="facehandler">
+      <image src='{{isFaceChecked == index ? item.lximage : item.lximage1}}'></image>
+      <!-- <image src='{{item.lximage1}}' wx:if="{{isShow1}}"></image> -->
+      <text>{{item.text}}</text>
+  </view>
+</view>
+<view class="interval"></view>

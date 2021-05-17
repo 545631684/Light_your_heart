@@ -1,0 +1,12 @@
+<block wx:if="{{$taroCompReady}}">
+  <view style="{{anonymousState__temp}}">
+    <block>
+      <block wx:if="{{list && list.length}}">
+        <question-list compid="{{$compid__17}}"></question-list>
+      </block>
+      <block wx:else>
+        <view class="page-nodata">{{errmsg}}</view>
+      </block>
+    </block>
+  </view>
+</block>

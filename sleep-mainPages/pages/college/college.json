@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "my-water":"../../components/my-water/my-water",
+    "van-circle": "@vant/weapp/circle/index",
+    "training-cont":"../../components/training-cont/training-cont",
+    "mission-cont":"../../components/mission-cont/mission-cont",
+    "mission-cont1":"../../components/mission-cont1/mission-cont1",
+    "tabbar":"/components/tabbar/tabbar",
+    "van-toast": "@vant/weapp/toast/index"
+  },
+  "navigationBarTitleText": "好梦之旅"
+}

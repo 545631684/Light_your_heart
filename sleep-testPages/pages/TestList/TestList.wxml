@@ -1,0 +1,21 @@
+<!--sleep-testPages/pages/TestList/TestList.wxml-->
+<!-- <view>
+        <navigator url="{{item.url}}" wx:for="{{list}}" wx:key="item">
+                <view class="box">
+                        <view class="title">{{index+1}}.{{item.title}}</view>
+                        <view class="info">{{item.info}}</view>
+                </view>
+        </navigator>
+</view> -->
+<view>
+        <navigator url="/sleep-testPages/pages/TestResult1/index?id={{item.id}}&type={{item.ProblemType}}&result={{item.score}}" wx:for="{{list}}"
+                wx:key="item">
+                <view class="box">
+                        <view class="title">{{index+1}}.{{item.CourseName}}</view>
+                        <view class="info">提交时间：{{item.CreateTime}}</view>       
+                        <!-- <view class="info">
+                                <rich-text nodes="{{item.CourseDesc}}"></rich-text>
+                        </view> -->
+                </view>
+        </navigator>
+</view>

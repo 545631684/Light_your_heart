@@ -1,0 +1,27 @@
+/* sleep-testPages/pages/TestList/TestList.wxss */
+.box{
+    width: 90%;
+    margin: 24rpx auto;
+    /* box-shadow: 5px 5px 5px #ccc; */
+    height: 130rpx;
+    border: 1px solid rgba(240, 240, 240);
+    border-radius: 20rpx;
+
+}
+.title{
+    margin-top: 10rpx;
+    font-size: 35rpx;
+    font-weight: bold;
+    margin-left:5%;
+
+}
+.info{
+    margin-top: 20rpx;
+    font-size: 25rpx;
+    width: 87%;
+    height: 30rpx;
+    margin-left: 7%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

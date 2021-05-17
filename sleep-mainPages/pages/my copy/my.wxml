@@ -1,0 +1,61 @@
+<!--pages/my/my.wxml-->
+<view class="top">
+  <!-- top 背景图 -->
+  <image class="bg" mode="aspectFit" src="../../assets/images/my/bg.png"></image>
+  <!-- 用户头像 用户名和个人签名 -->
+  <view class="userBox" bindtap="goModify">
+    <!-- 用户头像 -->
+    <view class="head">
+      <image mode="aspectFill" src="{{img}}" wx:if="{{img}}"></image>
+      <open-data type="userAvatarUrl" wx:else class="avatar"></open-data>
+      <!-- <image mode="aspectFill" src="/assets/mages/avator.png" wx:else></image> -->
+    </view>
+    <!-- 用户名 -->
+    <view class="user">
+      <text class="user_name" wx:if="{{username}}">{{username}}</text>
+      <open-data type="userNickName" class="user_name" lang="zh_CN" wx:else></open-data>
+      <image style="width:36rpx;height:36rpx;" src="../../assets/images/my/bianji.png"></image>
+    </view>
+    <!-- 签名 -->
+    <view class="signature ">
+      感受当下，遇见更好的自己
+    </view>
+  </view>
+  <!-- 4个图标 -->
+  <view class="ico">
+    <view class="ico_1" style="margin-right:270rpx">
+      <image style="width:54rpx;height:50rpx" src="../../assets/images/my/zixun.png"></image>
+      <view class="text">我要咨询</view>
+    </view>
+    <view class="ico_1" bindtap="myMeasurement">
+      <image style="width:58rpx;height:60rpx" src="../../assets/images/my/test.png"></image>
+      <view class="text">我的测评</view>
+    </view>
+  </view>
+
+</view>
+<!-- body信息 -->
+<view class="body">
+  <view class="cont">
+    <view class="cont_1" bindtap="goSet">
+      <image src="../../assets/images/my/set.png"></image>
+      <view class="text">设置</view>
+      <view class="arrow"></view>
+      <view class="line"></view>
+    </view>
+
+    <!-- <label>
+      <view class="cont_1" bindtap="share">
+        <image src="../../assets/images/my/recommend.png"></image>
+        <view class="text">推荐给朋友</view>
+        <view class="arrow"></view>
+        <button  open-type="share" style="display:none">分享</button>
+      </view>
+    </label> -->
+  </view>
+  <!-- 退出 -->
+
+  <!-- <navigator class="quit" open-type="exit" target="miniProgram" hover-class="navigator-hover">退出</navigator> -->
+
+</view>
+<tabbar current="3" />

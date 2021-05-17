@@ -1,0 +1,35 @@
+<view bindtap="back" class="backbox">
+  <view class="back"></view>
+</view>
+<seve wx:if="{{seveLock}}" bind:onSeve="onSeve"></seve>
+<view class="courses">
+  <view class="video" style="background-image:{{img}}">
+    <image src="{{img}}" style="height:100%;width:100%;" bindtap="play"></image>
+    <image src="../../assets/images/daytime/bf.png" class="bf" hidden="{{!state}}" bindtap="play"></image>
+    <view class="bf_time">
+      <text class="bf_time_left">{{currentTime}}</text>
+      <text class="bf_time_right">{{duration}}</text>
+    </view>
+    <view class="jdt" bindtouchmove="touch">
+      <view class="bj"></view>
+      <view class="jd" style="width:{{jd}}">
+        <view class="jd_yd"></view>
+      </view>
+    </view>
+  </view>
+  <view class="tit">{{title}}</view>
+  <!-- <title>
+    <text slot="title">课程介绍</text>
+  </title> -->
+  <!-- <view class="description">
+    {{js}}
+  </view> -->
+  <!-- <title>
+    <text slot="title">使用说明</text>
+  </title> -->
+  <view class="content">
+    <view class="txt" wx:for="{{p}}" wx:key="index" wx:if="{{item!=''}}">
+      <rich-text nodes="{{item}}" space="nbsp"></rich-text>
+    </view>
+  </view>
+</view>

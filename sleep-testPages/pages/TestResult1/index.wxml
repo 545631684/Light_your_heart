@@ -1,0 +1,42 @@
+<!--components/testResult/testResult.wxml-->
+<view class="box">
+  <image src="../../assets/images/testResult/bg.png" class="img1"></image>
+  <image src="../../assets/images/testResult/bg1.png" class="img2"></image>
+  <image src="../../assets/images/testResult/ren.png" class="photo"></image>
+  <view class="title">{{title}}</view>
+  <view class="fenshu" wx:if="{{score>-1}}">
+    <text class="score">{{score}}</text>
+    <text class="fen">分</text>
+  </view>
+  <view class="time">测试时长：{{time}}</view>
+  <view class="result">
+    <!-- <text class="numbers">“</text> -->
+    <view class="hint" wx:for="{{tip}}">{{item}}</view>
+    <!-- <text class="numbers">”</text> -->
+  </view>
+  <view class="line"></view>
+
+  <view>
+    <image src="../../assets/images/testResult/icon.png" class="img3" style="left:163rpx"></image>
+    <text class="analyze">测试分数分析</text>
+    <image src="../../assets/images/testResult/icon.png" class="img3" style="left:477rpx"></image>
+  </view>
+
+  <!-- <view class="cont {{type == 4? 'more' : ''}}"> -->
+  
+  <view class="cont2" wx:if="{{array2.length>0}}">
+    <view class="table_title table_header">
+      <view class="row_title"></view>
+      <view class="col_title" wx:for="{{array2[0].data}}">{{item}}</view>
+    </view>
+    <block wx:for="{{array2}}">
+      <view class="table_title" wx:if="{{index>0}}">
+        <view class="row_title">{{item.name}}</view>
+        <view class="col_title" wx:for="{{array2[index].data}}" wx:for-item="colItem">{{colItem}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="cont" wx:else>
+    <view wx:for="{{array}}">{{item}}</view>
+  </view>
+</view>

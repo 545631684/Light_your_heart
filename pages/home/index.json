@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index",
+    "article-list": "../../components/articleList/index",
+    "load-bottom": "../../components/loadBottom/index"
+  },
+  "navigationBarTitleText": "点亮心灵"
+}

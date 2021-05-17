@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view class="radio-item"><text class="radio-item-txt">{{title}}</text><at-radio compid="{{$compid__67}}"></at-radio></view></block>

@@ -1,0 +1,57 @@
+<view class="mykc">
+  <view class="navyy"></view>
+  <week bind:ontime="ontime"></week>
+  <view class="mycon">
+    <view class="fl">签到总计<text>{{habitcount}}</text>次</view>
+    <view class="fr">完成度{{jindu}}%</view>
+  </view>
+  <view class="swiper">
+    <view class="page-section page-section-spacing swiper">
+      <swiper style="height:100%;" previous-margin="65rpx" next-margin="65rpx" current="{{xiabiaoi}}">
+        <swiper-item wx:for="{{lb}}" wx:key="index">
+          <view class="swiper-item item1" bindtap="navtz" data-index="{{index}}">
+            <view class="lb1">
+              <image src="{{item.src}}" class="bj" bindtap="pause"></image>
+              <image src="../../assets/images/daytime/bf.png" hidden="{{!state}}" class="bf"></image>
+              <view class="h3">{{item.title}}</view>
+              <view class="p">{{item.con}}</view>
+              <view class="{{item.state!=1?'wanc':'ywc'}}">
+               <!-- 测试跳转 数据之后改 -->
+                <!-- <navigator url="../../pages/coursesCon/coursesCon?FId={{item.FId}}" wx:if="{{item.state!=1}}">
+                  去完成
+                </navigator> -->
+                <text wx:if="{{item.state!=1&&!item.SameDayCode}}" catchtap="wjs" style="width: 100%;height: 100%;display: block;">未解锁</text>
+                <text wx:elif="{{item.state!=1}}">去完成</text>
+                <text wx:else>已完成</text>
+              </view>
+              <image src="../../assets/images/daytime/wanc.png" wx:if="{{!item.state!=1}}" class="wancheng"></image>
+            </view>
+          </view>
+        </swiper-item>
+        <!-- <swiper-item>
+          <view class="swiper-item item2">
+            <view class="lb1">
+              <image src="../../assets/images/daytime/lb2.png"></image>
+              <view class="h3">记录昨晚睡眠</view>
+              <view class="p">您做记录的睡眠信息是医生为您提供咨询的依据</view>
+              <view class="wanc">去完成</view>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="swiper-item item3">
+            <view class="lb1">
+              <image src="../../assets/images/daytime/lb3.png"></image>
+              <view class="h3">睡眠卫生指南14条</view>
+              <view class="p">改掉不良习惯，还您良好睡眠</view>
+              <view class="wanc">去完成</view>
+            </view>
+          </view>
+        </swiper-item> -->
+      </swiper>
+    </view>
+  </view>
+  <view class="myfooter">
+    *研究发现失眠的认知行为治疗对失眠有更好的治疗效果，了解睡眠知识虽然不能马上改善我的失眠状况，但可以帮助我发现自己的睡眠问题。为了让睡眠变好，我要坚持下去！
+  </view>
+</view>

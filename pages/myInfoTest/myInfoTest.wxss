@@ -1,0 +1,370 @@
+/* pages/myInfoTest/myInfoTest.wxss */
+.container {
+  background: url('https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_bg.png') no-repeat center -100rpx;
+  background-size: 100% auto;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.questions {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 20rpx;
+}
+
+.progress_box {
+  width: 710rpx;
+  height: 104rpx;
+  background: #F8F8F8;
+  border-radius: 10rpx;
+  padding: 58rpx 0 0 27rpx;
+  display: flex;
+}
+
+.progress {
+  width: 540rpx;
+  height: 20rpx;
+  background: #FFEEEE;
+  border-radius: 10rpx;
+  display: flex;
+}
+
+.question1 .progress_blue {
+  position: relative;
+  width: 3.7%;
+  height: 100%;
+  border-radius: 10rpx 0 0 10rpx;
+  background: linear-gradient(#C7D8FF, #279DF8);
+}
+
+.progress_blue::before {
+  content: '';
+  width: 7rpx;
+  height: 20rpx;
+  background: linear-gradient(#C7D8FF, #279DF8);
+  position: absolute;
+  top: 23rpx;
+  right: 0rpx;
+}
+
+.progress_blue::after {
+  content: '';
+  width: 55rpx;
+  height: 45rpx;
+  background: url('https://manage.shrlxl.com/public/static/uploads/20210223/test_images/15637.png') no-repeat top center;
+  background-size: 55rpx 45rpx;
+  position: absolute;
+  top: -45rpx;
+  right: -28rpx;
+}
+
+.progress_percent {
+  flex: 1;
+  font-size: 18rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #1A1A1A;
+  line-height: 20rpx;
+  text-align: center;
+}
+
+.progress_text {
+  color: #ccc;
+  line-height: 14rpx;
+  margin-left: 34rpx;
+}
+
+.progress_text_blue {
+  color: #279DF8;
+  font-size: 48rpx;
+}
+
+.question_box {
+  width: 620rpx;
+  min-height: 614rpx;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 0rpx 4rpx 47rpx 2rpx rgba(34, 155, 248, 0.09);
+  border-radius: 40rpx;
+  margin: 72rpx auto 0;
+  padding: 72rpx 56rpx 40rpx;
+  position: relative;
+}
+
+.question_icon {
+  width: 104rpx;
+  height: 104rpx;
+  background: #FFFFFF;
+  box-shadow: 0rpx 0rpx 13rpx 0rpx rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -52rpx;
+  margin-left: -52rpx;
+}
+
+.question_icon image {
+  display: block;
+  width: 51rpx;
+  height: 51rpx;
+  margin: 26rpx auto 0;
+}
+
+.question_title {
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #111111;
+  margin-bottom: 40rpx;
+}
+
+.answer_item {
+  width: 450rpx;
+  height: 92rpx;
+  background: #F1F5F8;
+  border-radius: 46rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+  line-height: 92rpx;
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #111111;
+}
+
+.answer_item.checked {
+  background: #229BF8;
+  color: #FFFFFF;
+}
+
+.back_question {
+  width: 150rpx;
+  height: 60rpx;
+  background: #FFFFFF;
+  border: 1rpx solid #229BF8;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #229BF8;
+  text-align: center;
+  line-height: 58rpx;
+  margin-top: 25rpx;
+  margin-left: 45rpx;
+  float: left;
+}
+.next_question{
+  float: right;
+  width: 150rpx;
+  height: 60rpx;
+  background: #FFFFFF;
+  border: 1rpx solid #229BF8;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #229BF8;
+  text-align: center;
+  line-height: 58rpx;
+  margin-top: 25rpx;
+  margin-right: 42rpx;
+}
+.time {
+  display: inline-block;
+  width: 110rpx;
+  text-align: center;
+  border-bottom: 2rpx solid #000;
+}
+
+.question2 .progress_blue {
+  position: relative;
+  width: 7.4%;
+  height: 100%;
+  border-radius: 10rpx 0 0 10rpx;
+  background: linear-gradient(#C7D8FF, #279DF8);
+}
+
+.question3 .progress_blue {
+  position: relative;
+  width: 11.1%;
+  height: 100%;
+  border-radius: 10rpx 0 0 10rpx;
+  background: linear-gradient(#C7D8FF, #279DF8);
+}
+
+.question4 .progress_blue {
+  position: relative;
+  width: 14.8%;
+  height: 100%;
+  border-radius: 10rpx 0 0 10rpx;
+  background: linear-gradient(#C7D8FF, #279DF8);
+}
+
+.question5 .progress_blue {
+  position: relative;
+  width: 166rpx;
+  height: 100%;
+  border-radius: 10rpx 0 0 10rpx;
+  background: linear-gradient(#C7D8FF, #279DF8);
+}
+
+
+.submit {
+  width: 620rpx;
+  height: 100rpx;
+  background: #229BF8;
+  border-radius: 50rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  margin: 89rpx auto 0;
+}
+
+.score_box {
+  width: 100%;
+  height: 388rpx;
+  background: url('https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_bg_white.png') no-repeat center;
+  background-size: cover;
+  padding-top: 88rpx;
+}
+
+.score_title {
+  width: 100%;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #111111;
+  text-align: center;
+}
+
+.score {
+  width: 100%;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 93rpx;
+  text-align: center;
+}
+
+.score_blue {
+  font-size: 62rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #229AF7;
+  margin-right: 6rpx;
+}
+
+.fenxi {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 28rpx;
+  margin-top: 46rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #111111;
+}
+
+.fenxi_ic {
+  width: 28rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+}
+
+.tips_alert {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.56);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.tips_cont {
+  width: 604rpx;
+  height: 346rpx;
+  background: #FFFFFF;
+  box-shadow: 0rpx 4rpx 47rpx 2rpx rgba(34, 155, 248, 0.09);
+  border-radius: 10rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -302rpx;
+  top: 300rpx;
+  padding: 34rpx 44rpx;
+}
+
+.tips_title {
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #111111;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+.tips_text {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #7E7E7E;
+  line-height: 44rpx;
+  margin-top: 40rpx;
+}
+.btn {
+  clear: both;
+  width: 600rpx;
+  height: 84rpx;
+  background: linear-gradient(180deg,rgba(60,138,249,1) 0%,rgba(28,82,240,1) 100%);
+  box-shadow: 0rpx 2rpx 4rpx 3rpx rgba(47,116,245,0.52);
+  border-radius: 42rpx;
+  font-size: 36rpx;
+  font-family: PingFangHK-Regular,PingFangHK;
+  font-weight: 400;
+  color: rgba(255,255,255,1);
+  line-height: 84rpx;
+  letter-spacing: 1rpx;
+  text-align: center;
+  margin: 110rpx auto 0;
+}
+
+
+.radarContainer{
+  /* background-color: black; */
+  width:100%;
+  height:420px;
+  display: flex;
+  justify-content:center;
+   align-items: center; 
+  position: relative;
+  margin-top: -94rpx;
+  
+}
+.radarCanvas{
+  width:300px;
+  height:300px;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.cont{
+  text-align: center;
+}
+.cont view{
+    margin-top: 14rpx;
+    font-size:28rpx;
+  font-family:PingFangHK-Regular,PingFangHK;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+  line-height:40rpx;
+  letter-spacing:1rpx;
+}

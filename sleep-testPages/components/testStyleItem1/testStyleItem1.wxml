@@ -1,0 +1,11 @@
+<!--components/testStyleItem1/testStyleItem1.wxml-->
+<view class="box">
+    <view class="title">{{index}}丶{{titles}}</view>
+    <radio-group bindchange="radioChange" class="inner ">
+        <label class="selItem {{currentSel == item.s ? 'active' : ''}}" wx:for="{{sel}}" wx:key="item">          
+            <radio value="{{item.s}}" style="visibility:hidden" />         
+            <view class="doc">{{item.s}}</view>   
+            <view class="text" wx:for="{{answer}}" wx:if="{{index==items.Val}}"  wx:for-item="items" wx:key="items" wx:for-index="indexs">{{items.Answer}}</view>
+        </label>
+    </radio-group>
+</view>

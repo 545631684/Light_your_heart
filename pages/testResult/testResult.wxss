@@ -1,0 +1,55 @@
+/* pages/testResult/testResult.wxss */
+
+.score_box {
+  width: 100%;
+  height: 388rpx;
+  background: url('https://manage.shrlxl.com/public/static/uploads/20210223/test_images/test_bg_white.png') no-repeat center;
+  background-size: cover;
+  padding-top: 88rpx;
+}
+
+.score_title {
+  width: 100%;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #111111;
+  text-align: center;
+}
+
+.score {
+  width: 100%;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 93rpx;
+  text-align: center;
+}
+
+.score_blue {
+  font-size: 62rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #229AF7;
+  margin-right: 6rpx;
+}
+
+.fenxi {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 28rpx;
+  margin-top: 46rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #111111;
+}
+
+.fenxi_ic {
+  width: 28rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+}

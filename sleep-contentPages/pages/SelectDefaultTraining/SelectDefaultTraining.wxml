@@ -1,0 +1,3 @@
+<view wx:for="{{list}}" catchtap="toTrainDetail" data-id="{{item.id}}" wx:key="item" style="margin-top:31rpx" class="tr">
+    <training-cont  title="{{item.Titil}}" cont="{{item.Introduce}}" id="{{item.id}}" img="{{item.Image}}" />
+</view> 

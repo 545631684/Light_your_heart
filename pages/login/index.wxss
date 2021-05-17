@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.page-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 36rpx;
+  height: 100vh;
+}
+
+.page-login .login-panel {
+  width: 100%;
+  padding-bottom: 160rpx;
+  position: relative;
+}
+
+.logo_title {
+  width: 100%;
+  background: #fff;
+  color: #696565;
+  position: absolute;
+  top: -12rpx;
+  left: 286rpx;
+  font-size: 52rpx;
+  font-family: PingFang SC;
+  line-height: 200rpx;
+}
+
+.page-login .login-logo {
+  display: block;
+  height: 150rpx;
+  margin: 0 auto 80rpx
+}
+
+.page-login .login-btn {
+  margin-bottom: 24rpx
+}
+
+.page-login .login-btn-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  vertical-align: -8rpx
+}

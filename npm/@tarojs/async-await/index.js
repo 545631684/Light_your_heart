@@ -1,0 +1,1 @@
+!function(e){var i="undefined"!=typeof window&&window.Math===Math?window:"object"==typeof global?global:this;i.Promise||(i.Promise=e("./npm/promise-polyfill/lib/index.js")),i.regeneratorRuntime||(i.regeneratorRuntime=e("./npm/regenerator-runtime/runtime.js"))}(require);

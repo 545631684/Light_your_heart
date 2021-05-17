@@ -1,0 +1,23 @@
+<!--sleep-mainPages/pages/my/secondPage/secondPage.wxml-->
+<view wx:if="{{title == '系统设置'}}">
+  <view class="version">当前版本：Version 1.0</view>
+  <view class="del_btn" catchtap="clearStorage">清除缓存并退出</view>
+</view>
+
+<view wx:if="{{title == '帮助中心'}}">
+  <textarea placeholder-class="plh" bindblur="textareaBlur" value="{{textarea}}"
+    placeholder="告诉我们你所希望看到的改进，或是你所遇到的问题"></textarea>
+  <input placeholder-class="plh" bindblur="inputBlur" type="text" value="{{email}}" placeholder="请留下你的邮箱，谢谢" />
+  <view class="del_btn" catchtap="submit">提交反馈</view>
+</view>
+<view wx:if="{{title == '隐私政策'}}" class="secret">
+  <view>
+    （1）根据合法、正当、必要的原则，我们会收集实现产品功能所必要的信息，包括：您在注册账户时所填写的信息（昵称、手机号码等）；您的网络日志及设备信息；当您选择使用部分服务时，我们将在征求您的同意后获取相关提供服务所需的信息，如当您使用与位置有关的服务时，我们可能会获取您设备所在的位置信息；当您使用与真人认证有关的服务时，您可能需要通过“人脸识别”的方式完成核验，以验证使用者与对应账户的用户照片是否为同一人；为完成该“人脸识别”，我们会采集您的面部特征信息，如您不需要使用相关功能，您可以拒绝提供。
+  </view>
+  <view>
+    （2）运营方设有严格的数据保护及管理措施，我们会采取安全保障措施努力保护您的个人信息不丢失，不被未经授权地访问、使用、披露、修改或损坏以及其它形式的非法处理。
+  </view>
+  <view>
+    （3）您可以在应用内或您的设备中查询、更正、删除您的信息并对相关授权进行管理。
+  </view>
+</view>

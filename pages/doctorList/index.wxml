@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view><expert-list compid="{{$compid__6}}"></expert-list></view></block>

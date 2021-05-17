@@ -1,0 +1,132 @@
+<view style="width:100%;height:100%" class="{{seveLock?'hidden':'visible'}}">
+  <week bind:ontime="onTime"></week>
+  <seve wx:if="{{seveLock}}" bind:onSeve="onSeve"></seve>
+  <view class="mycon">
+    <view class="fl">{{date}}</view>
+    <view class="fr"><text>{{3-shuz}}</text>项待记录</view>
+  </view>
+  <title>
+    <text slot="title">我今天的整体感受？</text>
+  </title>
+  <day_con bind:onCheced="onCheced" data-id="0" show="{{num1}}"></day_con>
+  <!-- <title>
+    <text slot="title">我今日白天的精神状态？</text>
+  </title>
+  <day_con bind:onCheced="onCheced" data-id="1" show="{{num2}}"></day_con> -->
+  <title>
+    <text slot="title">小睡记录</text>
+  </title>
+  <view class="zhezhao" bindtap="hiddenxssj" hidden="{{xssj}}"></view>
+  <view class="time_con">
+    <view class="time_conent" wx:for="{{arry}}" wx:key="index">
+      <view class="time_con_time" bindtap="updata" data-index="{{index}}">
+        <view class="xs">
+          <image src="../../assets/images/daytime/rushui.png"></image>
+          <text>小睡</text>
+        </view>
+        <image class="fi" src="../../assets/images/daytime/jiantou.png"></image>
+        <text class="time_t">{{item.time}}</text>
+      </view>
+      <view class="time_con_fz">
+        <view class="zsc">
+          <image src="../../assets/images/daytime/naozhong.png"></image>
+          <text class="txtt">总时长(分钟)</text>
+          <view class="btns">
+            <view class="btn1" bindtap="subtract" data-index="{{index}}">-</view>
+            <text class="num">{{item.fz}}</text>
+            <view class="btn1" bindtap="add" data-index="{{index}}">+</view>
+          </view>
+        </view>
+      </view>
+      <view class="delete">
+        <view class="item_del" bindtap="del" data-index="{{index}}">
+          <image src="../../assets/images/daytime/delete.png"></image>
+          <text>删除</text>
+        </view>
+      </view>
+    </view>
+    <view class="xstk" hidden="{{xssj}}">
+      <view class="tt">选择小睡时间</view>
+      <view class="hg">
+        <view class="time" bindtap="startTime">
+          <text class="timeLeft {{!showtime?'activeBlue':''}}">开始时间</text><text
+            class="{{!showtime?'activeBlue1':'timeRight'}}">{{start}}</text>
+          <image src="../../assets/images/daytime/jiantou.png"></image>
+        </view>
+        <view class="time" bindtap="endTime">
+          <text class="timeLeft {{showtime?'activeBlue':''}}">结束时间</text><text
+            class="{{showtime?'activeBlue1':'timeRight'}}">{{end}}</text>
+          <image src="../../assets/images/daytime/jiantou.png"></image>
+        </view>
+      </view>
+      <view class="xzq">
+        <picker-view indicator-style="height:58px;" style="width: 100%; height: 100%;" value="{{value}}"
+          bindchange="bindChange" hidden="{{showtime}}">
+          <picker-view-column>
+            <view class="icon-container {{index1[0]==0?'show':''}}" style="line-height: 58px; text-align: center;">
+              {{date1}}
+            </view>
+          </picker-view-column>
+          <picker-view-column>
+            <view class="{{index1[1]==index?'show':''}}" wx:for="{{hours}}" wx:key="this"
+              style="line-height: 58px; text-align: center;">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view class="{{index1[2]==index?'show':''}}" wx:for="{{fz}}" wx:key="this"
+              style="line-height: 58px; text-align: center;">{{item}}</view>
+          </picker-view-column>
+        </picker-view>
+        <picker-view indicator-style="height:58px;" style="width: 100%; height: 100%;" value="{{value}}"
+          bindchange="bindChange1" hidden="{{!showtime}}">
+          <picker-view-column>
+            <view class="icon-container {{index1[0]==0?'show':''}}" style="line-height: 58px; text-align: center;">
+              {{date1}}
+            </view>
+          </picker-view-column>
+          <picker-view-column>
+            <view class="{{index1[1]==index?'show':''}}" wx:for="{{hours}}" wx:key="this"
+              style="line-height: 58px; text-align: center;">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view class="{{index1[2]==index?'show':''}}" wx:for="{{fz}}" wx:key="this"
+              style="line-height: 58px; text-align: center;">{{item}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+      <view class="qd" bindtap="addxssj">确定</view>
+    </view>
+    <view class="add_time">
+      <view class="item_time" bindtap="addTime">
+        <image src="../../assets/images/daytime/add.png"></image>
+        <text>添加休憩时间</text>
+      </view>
+    </view>
+  </view>
+  <title>
+    <text slot="title">今日活动</text>
+  </title>
+  <view class="day_con">
+    <!-- <view class="null_con" wx:if="{{lock}}">
+    <image class="null" src="../../assets/images/daytime/null.png"></image>
+    <view>赶紧<text bindtap="back">记录一下白天活动</text>吧！</view>
+    </view>
+    <view class="zzw" wx:else>
+      <view class="day" wx:for="{{sz}}" wx:key="index" bindtap="back">
+        <image class="tubiao" src="{{item.src}}"></image>
+        <text class="shih">{{item.zzw}}</text>
+        <view class="yfd">
+          <text class="contn">{{item.con}}</text>
+          <image class="jiantou" src="../../assets/images/daytime/jiantou.png"></image>
+        </view>
+      </view>
+    </view> -->
+    <view class="early" bindtap="checkbox">
+      <view class="item" wx:for="{{day}}" wx:key="index" bind:tap="cik" data-index="{{index}}">
+        <image src="{{item.active}}" wx:if="{{item.state}}"></image>
+        <image src="{{item.src}}" wx:else></image>
+        <text class="{{item.state==true?'black':''}}">{{item.con}}</text>
+      </view>
+    </view>
+  </view>
+  <btn bind:tap="seve"><text slot="con">保存</text></btn>
+</view>

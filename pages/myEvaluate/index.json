@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "at-list": "../../npm/taro-ui/dist/weapp/components/list/index",
+    "at-list-item": "../../npm/taro-ui/dist/weapp/components/list/item/index",
+    "load-bottom": "../../components/loadBottom/index"
+  },
+  "navigationBarTitleText": "我的测评"
+}

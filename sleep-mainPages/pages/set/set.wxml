@@ -1,0 +1,39 @@
+<!--sleep-mainPages/pages/set/set.wxml-->
+<view>    
+    
+      <view class="item" bindtap="share">       
+        <text class="text">推荐给朋友</text>
+        <view class="jiantou"></view>
+       
+      </view>
+
+     <view class="item">
+        <text>聊天字体</text>
+        <view class="jiantou"></view>
+    </view>
+     <view class="item">
+       <navigator class="quit" open-type="exit" target="miniProgram" hover-class="navigator-hover">退出</navigator>
+        <view class="jiantou"></view>
+    </view>
+    <popup
+        show="{{ show }}"
+        position="bottom"
+        bind:close="onClose"
+        round
+    >
+        <view class="icon">
+            <label>
+                <view class="iconitem">
+                <image style="width:108rpx;height:108rpx" src="../../assets/images/my/weixin.png"></image>
+                <view class="title">微信</view>
+                     <button  open-type="share" style="display:none">分享</button>
+                </view>
+            </label>
+            <view class="iconitem" bindtap="pengyouquan">
+                <image style="width:108rpx;height:108rpx" src="../../assets/images/my/pengyouquan.png"></image>
+                <view class="title">朋友圈</view>
+            </view>
+        </view>
+        <view class="cancel" bindtap="onClose">取消</view>
+    </popup>
+</view>

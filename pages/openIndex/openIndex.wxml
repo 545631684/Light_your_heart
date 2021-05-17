@@ -1,0 +1,7 @@
+<!--pages/openIndex/openIndex.wxml-->
+<view class="open_cont">
+  <view class="btn_box">
+    <view class="slogn">好梦 好眠 好心情</view>
+    <view catchtap="now" class="now">立即体验</view>
+  </view>
+</view>

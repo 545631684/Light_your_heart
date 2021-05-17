@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "at-radio": "../../npm/taro-ui/dist/weapp/components/radio/index"
+  }
+}

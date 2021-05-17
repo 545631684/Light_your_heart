@@ -1,0 +1,22 @@
+<OneEarly>
+  <image src="../../assets/images/daytime/morning.png" slot="img"></image>
+  <text slot="title">上午(6:00-11:00)</text>
+</OneEarly>
+<Early data-id="0" bind:onCheckbox="onCheckbox"></Early>
+<OneEarly>
+  <image src="../../assets/images/daytime/nooning.png" slot="img"></image>
+  <text slot="title">中午(11:00-13:00)</text>
+</OneEarly>
+<Early data-id="1" bind:onCheckbox="onCheckbox"></Early>
+<OneEarly>
+  <image src="../../assets/images/daytime/evening.png" slot="img"></image>
+  <text slot="title">下午(13:00-18:00)</text>
+</OneEarly>
+<Early data-id="2" bind:onCheckbox="onCheckbox"></Early>
+<OneEarly>
+  <image src="../../assets/images/daytime/evening.png" slot="img"></image>
+  <text slot="title">晚上(18:00-24:00)</text>
+</OneEarly>
+<Early data-id="3" bind:onCheckbox="onCheckbox"></Early>
+<view class="seveTop"><btn bindtap="seve"><text slot="con">保存</text></btn></view>
+<view class="seveFooter" bindtap="rtn">无以上活动</view>

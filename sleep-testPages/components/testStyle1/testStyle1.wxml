@@ -1,0 +1,4 @@
+<!--components/testStyle1/testStyle1.wxml-->
+<text class="title">{{title}}</text>
+<testStyleItem1 wx:for="{{question}}" wx:key="item" titles="{{item.Problem}}" name="test{{index+1}}" index="{{index+1}}" bind:myEvent="result" answer="{{answer}}"/>
+<view class="button" bindtap="tijiao">提交</view>

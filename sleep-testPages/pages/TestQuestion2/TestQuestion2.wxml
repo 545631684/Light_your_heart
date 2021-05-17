@@ -1,0 +1,2 @@
+<!--pages/TestQuestion2/TestQuestion2.wxml-->
+<testStyle2  bind:result="result"  title="{{title}}"  question="{{question}}" answer="{{answer}}" type="{{type}}" />

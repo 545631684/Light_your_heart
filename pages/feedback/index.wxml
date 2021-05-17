@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view><view class="feedback-form"><at-textarea compid="{{$compid__43}}"></at-textarea><at-input compid="{{$compid__44}}"></at-input></view><at-button compid="{{$compid__45}}">提交反馈</at-button></view></block>

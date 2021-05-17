@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "load-bottom": "../../components/loadBottom/index"
+  },
+  "navigationBarTitleText": "我的医生"
+}

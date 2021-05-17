@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view><article-list compid="{{$compid__38}}"></article-list><load-bottom compid="{{$compid__39}}"></load-bottom></view></block>

@@ -1,0 +1,1 @@
+<block wx:if="{{$taroCompReady}}"><view class="article-list"><article-item wx:key="FId" wx:for="{{loopArray6}}" wx:for-item="item" wx:for-index="i" compid="{{item.$compid__51}}"></article-item></view></block>

@@ -1,0 +1,56 @@
+<view bindtap="back" class="backbox">
+<view class="back" ></view>
+</view>
+<seve wx:if="{{seveLock}}" bind:onSeve="onSeve"></seve>
+<view class="courses">
+  <view class="video" style="background-image:{{img}}">
+    <!-- <audio id="myVideo" controls="{{false}}" show-center-play-btn="{{false}}" bindended="end" style="height:607rpx;width:750rpx;" src="{{video}}" bindtap="play" bindtimeupdate="bc"></audio> -->
+    <image src="{{img}}" style="height:100%;width:100%;" bindtap="play"></image>
+    <image src="../../assets/images/daytime/bf.png" class="bf" hidden="{{!state}}" bindtap="play"></image>
+    <view class="bf_time">
+      <text class="bf_time_left">{{currentTime}}</text>
+      <text class="bf_time_right">{{duration}}</text>
+    </view>
+    <view class="jdt" bindtouchmove="touch">
+      <view class="bj"></view>
+      <view class="jd" style="width:{{jd}}"><view class="jd_yd"></view></view>
+    </view>
+  </view>
+  <view class="tit">{{title}}</view>
+  <title>
+    <text slot="title">课程介绍</text>
+  </title>
+  <view class="description">
+    {{js}}
+  </view>
+  <title>
+    <text slot="title">使用说明</text>
+  </title>
+  <view class="content">
+    <view class="txt" wx:for="{{p}}" wx:key="index" wx:if="{{item!=''}}">
+      <!-- <view class="xyd"></view>{{item}}。 -->
+    <rich-text nodes="{{item}}" space="nbsp"></rich-text>
+
+    </view>
+    <!-- <view class="txt">
+      <view class="xyd"></view>每天同一时刻起床，一周7天全是如此。
+    </view>
+    <view class="txt">
+      <view class="xyd"></view>规律锻炼，运动能直接改善深睡眠，也能让人放松，日间有规律的运动可以让人们在夜晚更容易疲劳，能更快入睡，但是要注意，睡前2小时不要运动哦！
+    </view>
+    <view class="txt">
+      <view class="xyd"></view>确保我市舒适丶温度适宜，且不受光线和声音的干扰。
+    </view>
+    <view class="txt">
+      <view class="xyd"></view>睡前不吸烟喝酒丶减少咖啡因摄入，规律饮食，不饿着丶夜间避免过度饮用饮料。
+    </view>
+    <view class="txt">
+      <view class="xyd"></view>不试图入睡，除了睡觉和性生活，不要再床上做其他事情；白天保持清醒，避免打盹。
+    </view>
+    <view class="txt">
+      <view class="xyd"></view>把闹钟放在床下或者转移它，不要看到他
+    </view> -->
+  </view>
+  <view class="wanc" bindtap="wanc" wx:if="{{state1}}">完成任务</view>
+  <view class="wanc" wx:else>已完成</view>
+</view>

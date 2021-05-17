@@ -1,0 +1,56 @@
+<!--components/evaluating/evaluating.wxml-->
+<view class="box">
+  <view class="rtn" bindtap='rtn'><image src="../../assets/images/testResult/liebiao@2x.png"></image><text>量表列表</text></view>
+  <image src="../../assets/images/testResult/bg.png"   class="img1"></image>
+  <image src="../../assets/images/testResult/bg1.png" class="img2"></image>
+  <image src="../../assets/images/testResult/ren.png" class="photo"></image>
+  <view class="title">{{title}}</view>
+  <view class="fenshu">
+    <text class="score">{{num}}</text>
+    <text class="fen">分</text>
+  </view>
+  <view class="time">测试时长：{{time}}</view>
+  <view  wx:if="{{type==1}}">
+    <text class="numbers" style="top:446rpx;left:81rpx">“</text>
+    <text class="hint">
+      工作学习： 
+      社交生活： 
+      家庭生活： 
+    </text>
+    <text class="hint" style="left:405rpx">
+      {{info1}} 
+      {{info2}} 
+      {{info3}} 
+    </text>
+    <text class="numbers" style="top:626rpx;left:637rpx">”</text>
+  </view>
+  <view  wx:else>
+    <text class="numbers" style="top:446rpx;left:81rpx">“</text>
+    <view class="tips">{{tips}}</view>
+    <text class="numbers" style="top:526rpx;left:637rpx">”</text>
+  </view>
+  <view class="line"></view>
+
+  <view>
+    <image src="../../assets/images/testResult/icon.png" class="img3" style="left:163rpx"></image>
+    <text class="analyze">测试分数分析</text>
+    <image src="../../assets/images/testResult/icon.png" class="img3" style="left:477rpx"></image>
+  </view>
+
+  <view class="cont" wx:if="{{type==1}}">
+    <text style="top:808rpx;left:83rpx">完全没有：0分</text>
+    <text class="bar"></text>
+    <text style="top:808rpx;left:413rpx">轻度受损：1分-3分</text>
+    <text style="top:876rpx;left:84rpx">中度受损：4-6分</text>
+    <text class="bar" style="top:879rpx"></text>
+    <text style="top:876rpx;left:413rpx">显著受损：7分-9分</text>
+    <text style="top:944rpx;left:84rpx">严重受损：10分</text>
+  </view>
+  <view class="conts" wx:else>    
+    <view>总分范围0~28</view>
+    <view>0~7没有临床上显著的失眠症</view>
+    <view>8~14阈下失眠症</view>
+    <view>15~21临床失眠症(中重度)</view>
+    <view>22~28临床失眠症(重度)</view>
+  </view>
+</view>
