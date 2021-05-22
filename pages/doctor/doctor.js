@@ -58,7 +58,7 @@ Page({
           success:res=>{
             console.log('支付结果',res);
             wx.redirectTo({
-              url: '/sleep-mainPages/pages/doctor/doctor',
+              url: '/sleep-mainPages/pages/my/secondPage/interviewList',
             })
           },
           fail:err=>{

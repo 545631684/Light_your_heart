@@ -1,0 +1,19 @@
+/* sleep-mainPages/pages/my/secondPage/saveInfo.wxss */
+.saveinfo{margin: 40rpx auto; width: 90%; height: auto;    box-sizing: border-box;}
+.saveinfo .saveinfo_tab{ width: 60%; height: auto; margin: auto;}
+radio-group{width: 100%;display: flex; justify-content: center; align-items: center;}
+.saveinfo .saveinfo_tab label{display: flex; justify-content: flex-start; align-items: center;}
+.saveinfo .saveinfo_tab label:nth-child(2){margin-left: 30rpx;}
+
+.flex{display:flex;display:-webkit-flex;display:-ms-flexbox}
+.saveinfo .saveinfo_tab{ border-radius: 10rpx;justify-content: space-between; align-items: center;width: 100%;}
+.saveinfo .saveinfo_tab view{ font-size: 36rpx; text-align: center; width: 50%; padding: 20rpx 0; font-weight: bold; color: #229BF8;}
+.saveinfo .saveinfo_tab view.on{background: #229BF8;color: #fff;}
+.saveinfo .saveinfo_tab view:nth-child(1).on{border-radius:  5rpx;}
+.saveinfo .saveinfo_tab view:nth-child(2).on{border-radius: 5rpx;}
+
+.saveinfo_content{width: 100%; height: 300rpx; margin:50rpx auto;}
+.saveinfo_content view{width: 100%; height: 100%;overflow:hidden;border: 1px solid #ccc; display: flex; justify-content: center; align-items: center;}
+.saveinfo_content view text{display: block; margin: auto; width: 200rpx;}
+textarea{width: 100%; height: 300rpx; border: 1px solid #ccc; padding: 20rpx; box-sizing: border-box;}
+.saveinfo_submit{width: 300rpx; height: 60rpx; border-radius: 30rpx; color: #fff; background: #229BF8; margin: 50rpx auto; text-align: center; line-height: 60rpx; font-size: 32rpx;}

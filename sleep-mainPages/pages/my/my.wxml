@@ -11,7 +11,7 @@
       <view class="number">{{test_count}}</view>
       <view>次测评</view>
     </view>
-    <view class="my_num_item">
+    <view class="my_num_item" catchtap="myInterview">
       <view class="number">{{interview_count}}</view>
       <view>次访谈</view>
     </view>

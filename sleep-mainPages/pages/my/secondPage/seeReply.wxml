@@ -1,0 +1,22 @@
+<view class="seeRrply">
+    <view class="seeRrply_user">
+        <image class="seeRrply_user_img" src="https://manage.shrlxl.com/public/static/uploads/20210220/d3a053fe5b2df87ce001e6ef83d9d8cc.jpg"></image>
+        <view class="seeRrply_user_con">
+            <view>2021-05-22 11:44</view>
+            <view>
+                <image src="https://manage.shrlxl.com/public/static/uploads/20210220/d3a053fe5b2df87ce001e6ef83d9d8cc.jpg" mode="aspectFit"></image>
+                <text>的萨科技好空间大富豪是款到发货数控刀具付货款受打击阿富汗就开始地方</text>
+            </view>
+        </view>
+    </view>
+    <view class="seeRrply_doctor">
+        <view class="seeRrply_doctor_con">
+            <view>2021-05-22 11:44</view>
+            <view>
+                <image src="https://manage.shrlxl.com/public/static/uploads/20210220/d3a053fe5b2df87ce001e6ef83d9d8cc.jpg" mode="aspectFit"></image>
+                <text>的萨科技好空间大富豪是款到发货数控刀具付货款受打击阿富汗就开始地方</text>
+            </view>
+        </view>
+        <image class="seeRrply_doctor_img" src="https://manage.shrlxl.com/public/static/uploads/20210220/d3a053fe5b2df87ce001e6ef83d9d8cc.jpg"></image>
+    </view>
+</view>

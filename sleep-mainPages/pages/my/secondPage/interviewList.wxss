@@ -1,0 +1,17 @@
+.interviewList{box-sizing: border-box; width: 90%; margin: 40rpx auto; height: auto;}
+.interviewList .interviewList_li{box-shadow: 0rpx 0rpx 10rpx #ccc; position: relative; border-radius: 20rpx;}
+.interviewList .interviewList_li .doctorInfo{display: flex; justify-content: flex-start; align-items: center; padding:10rpx 20rpx;}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_img{width: 150rpx; height: 150rpx; border-radius: 20rpx; margin-top: -50rpx; border: 1px solid rgba(204, 204, 204, 0.3);}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_con{ margin-left: 20rpx;}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_con view{margin-bottom: 5rpx;}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_con view:nth-child(1){display: flex; justify-content: flex-start; align-items: center;}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_con view:nth-child(1) text{text-overflow: ellipsis;color: #999999;  line-height: 33rpx; letter-spacing: 1rpx; font-family: PingFangHK-Regular, PingFangHK; font-weight: 400;}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_con view:nth-child(1) text:nth-child(1){font-size: 32rpx;color: rgba(51, 51, 51, 1);}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_con view:nth-child(1) text:nth-child(2){padding-left: 20rpx;font-size: 26rpx;}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_con view:nth-child(2){font-size: 26rpx;color: rgba(51, 51, 51, 1);}
+.interviewList .interviewList_li .doctorInfo .doctorInfo_con view:nth-child(3){font-size: 26rpx;color: rgba(51, 51, 51, 1);}
+.interviewList .interviewList_li .interviewList_li_button{display: flex; justify-content: flex-end; align-items: center; padding:0 20rpx 20rpx;}
+.interviewList .interviewList_li .interviewList_li_button view{border-radius: 10rpx;font-size: 26rpx;color: rgba(51, 51, 51, 1); border: 1px solid  #229BF8; padding: 6rpx 10rpx; margin-left: 20rpx;color: #229BF8; background: #fff;}
+.interviewList .interviewList_li .interviewList_li_button view:nth-child(1){}
+.interviewList .interviewList_li .interviewList_li_button view:nth-child(2){}
+.interviewList .interviewList_li .interviewList_li_button view:nth-child(3){}
