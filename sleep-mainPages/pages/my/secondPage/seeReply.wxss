@@ -3,15 +3,29 @@
 .seeRrply .seeRrply_user{display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 30rpx;}
 .seeRrply .seeRrply_user .seeRrply_user_img{width: 100rpx; height: 100rpx;border-radius: 200rpx; margin-top:10rpx}
 .seeRrply .seeRrply_user .seeRrply_user_con{  width: 500rpx; margin-left: 20rpx;}
-.seeRrply .seeRrply_user .seeRrply_user_con view:nth-child(1){font-size: 26rpx;margin-left: 20rpx; padding: 10rpx;}
-.seeRrply .seeRrply_user .seeRrply_user_con view:nth-child(2){box-shadow: 0rpx 0rpx 10rpx #ccc; border-radius: 20rpx; width: 500rpx; margin-left: 20rpx; background: #fff; padding: 20rpx;}
-.seeRrply .seeRrply_user .seeRrply_user_con image{max-width: 480rpx; width: 100%; }
-.seeRrply .seeRrply_user .seeRrply_user_con text{ text-align: left;font-size: 28rpx;display: block;}
+.seeRrply .seeRrply_user .seeRrply_user_con view:nth-child(1){font-size: 26rpx;padding: 10rpx;}
+.seeRrply .seeRrply_user .seeRrply_user_con view:nth-child(2){display: flex; justify-content: flex-start;}
+.seeRrply .seeRrply_user .seeRrply_user_con image{max-width: 480rpx; width: 100%; background: #fff;padding: 20rpx;box-shadow: 0rpx 0rpx 10rpx #ccc; }
+.seeRrply .seeRrply_user .seeRrply_user_con text{background: #fff; text-align: right;font-size: 28rpx;display: block;width: max-content;max-width: 500rpx;box-shadow: 0rpx 0rpx 10rpx #ccc; border-radius: 20rpx;padding: 20rpx;}
 
 .seeRrply .seeRrply_doctor{display: flex; justify-content: flex-end; align-items: flex-start;margin-bottom: 30rpx;}
 .seeRrply .seeRrply_doctor .seeRrply_doctor_img{width: 100rpx; height: 100rpx;border-radius: 200rpx; margin-top:10rpx}
 .seeRrply .seeRrply_doctor .seeRrply_doctor_con{  width: 500rpx;  margin-right: 40rpx;}
-.seeRrply .seeRrply_doctor .seeRrply_doctor_con view:nth-child(1){font-size: 26rpx;margin-left: 20rpx; padding: 10rpx; text-align: right;}
-.seeRrply .seeRrply_doctor .seeRrply_doctor_con view:nth-child(2){box-shadow: 0rpx 0rpx 10rpx #ccc; border-radius: 20rpx; width: 500rpx; margin-left: 20rpx; background: #fff; padding: 20rpx;}
-.seeRrply .seeRrply_doctor .seeRrply_doctor_con image{max-width: 480rpx; width: 100%; }
-.seeRrply .seeRrply_doctor .seeRrply_doctor_con text{ text-align: right;font-size: 28rpx;display: block;}
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con view:nth-child(1){font-size: 26rpx; padding: 10rpx; text-align: right;}
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con view:nth-child(2){ display: flex; justify-content: flex-end; }
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con image{max-width: 480rpx; width: 100%; background: #fff;padding: 30rpx 20rpx;box-shadow: 0rpx 0rpx 10rpx #ccc;border-radius: 20rpx; }
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con text{background: #fff; text-align: right;font-size: 28rpx;display: block;width: max-content;max-width: 500rpx;box-shadow: 0rpx 0rpx 10rpx #ccc; border-radius: 20rpx;padding: 20rpx;}
+
+.seeRrply_con{margin-bottom: 110rpx;}
+.seeRrply_con2{margin-bottom: 270rpx;}
+
+.speak{width: 750rpx; height: 110rpx; background: #fff; position: fixed; bottom: 0;left: 0; box-sizing: border-box;transition: all  0.2s;}
+.speakNav{height: 270rpx;}
+.speak .speak_input{margin: 15rpx 20rpx;background: #f8f8f8;display: flex; justify-content: space-around; align-items: center;border-radius: 10rpx;}
+.speak .speak_input image{width: 31rpx; height: 31rpx;}
+.speak .speak_input input{width: 500rpx; height: 80rpx; line-height: 80rpx; font-size: 28rpx; text-align: left;}
+.speak .speak_input view{width: 90rpx; height: 54rpx; border-radius: 10rpx; border: 1px solid #229bf8; color: #229bf8; text-align: center; font-size: 28rpx;line-height: 54rpx;}
+.speak .speak_nav{height: 160rpx; width: 100%; padding: 20rpx; display: flex; justify-content: space-between; align-items: center;}
+.speak .speak_nav view{width: 86rpx;}
+.speak .speak_nav view image{width: 86rpx; height: 86rpx;}
+.speak .speak_nav view text{display: block; width: 86rpx; text-align: center; font-size: 26rpx;}

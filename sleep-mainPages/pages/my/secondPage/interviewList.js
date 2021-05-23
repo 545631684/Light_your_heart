@@ -20,7 +20,7 @@ Page({
         };
         request("/member/get_all_consult", 'post', data, _this.data.token).then(res => {
             console.log('访谈数据',res)
-            if(res.data.list.length != 0) _this.setData({interviewData:res.data.list})
+            if(res.data.list.length != 0) _this.setData({interviewData:res.data.list, role:res.data.role})
         })
     },
 

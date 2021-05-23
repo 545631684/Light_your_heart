@@ -94,31 +94,31 @@ Page({
             tmplIds: ['C4tFmUVFKYFVzC1kgbgXA7K8QI75kK0Kj4J6BliDme8'],
             success (res) { 
                 console.log('订阅消息状态',res)
-            }
-          })
-        // 延迟一秒执行，给文本框赋值争取时间
-        setTimeout(function(){
-            if(_this.data.doctor_id != '' && _this.data.user_id != '' && _this.data.mycontent != ''){
-                request("/member/submit_message", 'get', {MemberCode:'LM-bLBIrolr',doctor_id:_this.data.doctor_id,user_id:_this.data.user_id,mycontent:_this.data.mycontent,type:_this.data.type}, _this.data.token).then(res => {
-                    console.log('提交留言返回数据',res)
-                    if(res.data.code == 0 && res.data.msg == '添加成功'){
+                // 延迟一秒执行，给文本框赋值争取时间
+                setTimeout(function(){
+                    if(_this.data.doctor_id != '' && _this.data.user_id != '' && _this.data.mycontent != ''){
+                        request("/member/submit_message", 'get', {MemberCode:'LM-bLBIrolr',doctor_id:_this.data.doctor_id,user_id:_this.data.user_id,mycontent:_this.data.mycontent,type:_this.data.type}, _this.data.token).then(res => {
+                            console.log('提交留言返回数据',res)
+                            if(res.data.code == 0 && res.data.msg == '添加成功'){
+                                wx.showToast({
+                                    title: res.data.msg,
+                                    icon: 'none'
+                                })
+                                wx.navigateTo({
+                                    url: '/sleep-mainPages/pages/my/secondPage/interviewList',
+                                })
+                                
+                            }
+                        })
+                    } else {
                         wx.showToast({
-                            title: res.data.msg,
+                            title: '请填写留言信息后在提交',
                             icon: 'none'
                         })
-                        wx.navigateTo({
-                            url: '/sleep-mainPages/pages/my/secondPage/interviewList',
-                        })
-                        
                     }
-                })
-            } else {
-                wx.showToast({
-                    title: '请填写留言信息后在提交',
-                    icon: 'none'
-                })
+                },1000)
             }
-        },1000)
+          })
         
     },
 
