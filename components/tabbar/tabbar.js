@@ -43,10 +43,10 @@ Component({
       })
     },
     nav4(){
-      // wx.redirectTo({
-      //   url:'/sleep-mainPages/pages/doctor/doctor'
-      // })
-      Toast('功能正在开发~');
+      wx.redirectTo({
+        url:'/sleep-mainPages/pages/doctor/doctor'
+      })
+      // Toast('功能正在开发~');
     }
   },
 })

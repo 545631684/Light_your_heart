@@ -1,0 +1,24 @@
+<view class="seeRrply">
+    <view wx:for="{{listData}}" wx:key="index">
+        <view class="seeRrply_user" wx:if="{{item.message_type == 1}}">
+            <image class="seeRrply_user_img" src="{{item.doctor_image}}"></image>
+            <view class="seeRrply_user_con">
+                <view>{{item.add_time}}</view>
+                <view>
+                    <image wx:if="{{item.type == 2}}" src="{{item.content}}" mode="aspectFit"></image>
+                    <text wx:if="{{item.type == 1}}">{{item.content}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="seeRrply_doctor" wx:if="{{item.message_type == 0}}">
+            <view class="seeRrply_doctor_con">
+                <view>{{item.add_time}}</view>
+                <view>
+                    <image wx:if="{{item.type == 2}}" src="{{item.content}}" mode="aspectFit"></image>
+                    <text wx:if="{{item.type == 1}}">{{item.content}}</text>
+                </view>
+            </view>
+            <image class="seeRrply_doctor_img" src="{{item.user_image}}"></image>
+        </view>
+    </view>
+</view>

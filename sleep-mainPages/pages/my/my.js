@@ -76,6 +76,12 @@ Page({
       url: '/sleep-testPages/pages/TestList/TestList',
     })
   },
+  // 我的访谈记录
+  myInterview() {
+    wx.navigateTo({
+      url: '/sleep-mainPages/pages/my/secondPage/interviewList',
+    })
+  },
   goModify() {
     wx.navigateTo({
       url: '/sleep-mainPages/pages/modifyuserinfo/index',

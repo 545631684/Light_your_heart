@@ -1,0 +1,17 @@
+/* sleep-mainPages/pages/my/secondPage/seeReply.wxss */
+.seeRrply{padding: 30rpx 25rpx; background: #EDEDED; box-sizing: border-box; min-height: 100vh; height: auto;}
+.seeRrply .seeRrply_user{display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 30rpx;}
+.seeRrply .seeRrply_user .seeRrply_user_img{width: 100rpx; height: 100rpx;border-radius: 200rpx; margin-top:10rpx}
+.seeRrply .seeRrply_user .seeRrply_user_con{  width: 500rpx; margin-left: 20rpx;}
+.seeRrply .seeRrply_user .seeRrply_user_con view:nth-child(1){font-size: 26rpx;margin-left: 20rpx; padding: 10rpx;}
+.seeRrply .seeRrply_user .seeRrply_user_con view:nth-child(2){box-shadow: 0rpx 0rpx 10rpx #ccc; border-radius: 20rpx; width: 500rpx; margin-left: 20rpx; background: #fff; padding: 20rpx;}
+.seeRrply .seeRrply_user .seeRrply_user_con image{max-width: 480rpx; width: 100%; }
+.seeRrply .seeRrply_user .seeRrply_user_con text{ text-align: left;font-size: 28rpx;display: block;}
+
+.seeRrply .seeRrply_doctor{display: flex; justify-content: flex-end; align-items: flex-start;margin-bottom: 30rpx;}
+.seeRrply .seeRrply_doctor .seeRrply_doctor_img{width: 100rpx; height: 100rpx;border-radius: 200rpx; margin-top:10rpx}
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con{  width: 500rpx;  margin-right: 40rpx;}
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con view:nth-child(1){font-size: 26rpx;margin-left: 20rpx; padding: 10rpx; text-align: right;}
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con view:nth-child(2){box-shadow: 0rpx 0rpx 10rpx #ccc; border-radius: 20rpx; width: 500rpx; margin-left: 20rpx; background: #fff; padding: 20rpx;}
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con image{max-width: 480rpx; width: 100%; }
+.seeRrply .seeRrply_doctor .seeRrply_doctor_con text{ text-align: right;font-size: 28rpx;display: block;}

@@ -71,6 +71,9 @@
         "pages/day/day",
         "pages/my/my",
         "pages/my/secondPage/secondPage",
+        "pages/my/secondPage/interviewList",
+        "pages/my/secondPage/saveInfo",
+        "pages/my/secondPage/seeReply",
         "pages/modifyuserinfo/index",
         "pages/set/set",
         "pages/doctor/doctor"

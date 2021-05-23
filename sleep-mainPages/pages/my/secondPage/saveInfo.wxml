@@ -1,0 +1,15 @@
+<view class="saveinfo">
+    <view class="saveinfo_tab flex">
+        <view class="{{tab_index == 1 ? 'on' : ''}}"  data-index="1" bindtap="radioChange">文字</view>
+        <view class="{{tab_index == 2 ? 'on' : ''}}"  data-index="2" bindtap="radioChange">图片</view>
+    </view>
+    <view class="saveinfo_content">
+        <textarea wx:if="{{tab_index == 1}}" placeholder="请填写留言内容" auto-focus  bindblur="bindTextAreaBlur"/>
+        <view wx:elif="{{tab_index == 2}}" catchtap="uploadImg">
+            <text wx:if="{{mycontent == ''}}">点击上传图片</text>
+            <image wx:elif="{{mycontent != ''}}" src="{{mycontent}}" mode="aspectFill" ></image>
+        </view>
+    </view>
+
+    <view class="saveinfo_submit" catchtap="saveinfo_submit">提交</view>
+</view>
