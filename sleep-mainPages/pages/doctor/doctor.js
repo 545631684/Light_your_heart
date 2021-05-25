@@ -12,7 +12,8 @@ Page({
     request("/doctor/doctor_list", "GET",token).then(res => {
       console.log('医生列表',res)
       this.setData({
-        doctorList:res.data.data
+        doctorList:res.data.data,
+        userId: wx.getStorageSync('userId')
       })
     });
   },
@@ -21,5 +22,16 @@ Page({
     wx.navigateTo({
       url: '/pages/doctor/doctor?id=' + id,
     })
-  }
+  },
+  /**
+   * 留言对话页跳转
+   */
+  stayInfo(e){
+    let userid = e.currentTarget.dataset.userid;
+    let doctorid = e.currentTarget.dataset.doctorid;
+    console.log(e.currentTarget.dataset)
+    wx.navigateTo({
+      url: '/sleep-mainPages/pages/my/secondPage/seeReply?user_id=' + userid + '&doctor_id=' + doctorid,
+    })
+  },
 })

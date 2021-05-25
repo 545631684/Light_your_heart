@@ -58,7 +58,8 @@ Page({
           nickName: userinfor.NickName || wx.getStorageSync('nickName'),
           avatarUrl: userinfor.HeadImg || wx.getStorageSync('avatarUrl'),
           interview_count:userinfor.interview_count||0,
-          test_count:userinfor.test_count||0
+          test_count:userinfor.test_count||0,
+          message_count:userinfor.message_count||0
         })
       }
     })
@@ -80,6 +81,12 @@ Page({
   myInterview() {
     wx.navigateTo({
       url: '/sleep-mainPages/pages/my/secondPage/interviewList',
+    })
+  },
+  // 我的留言列表
+  myStayInfo() {
+    wx.navigateTo({
+      url: '/sleep-mainPages/pages/my/secondPage/stayInfoList',
     })
   },
   goModify() {

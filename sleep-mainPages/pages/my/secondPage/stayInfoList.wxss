@@ -1,0 +1,11 @@
+.stayInfoList{padding: 50rpx 20rpx; box-sizing: border-box;background: #EDEDED; box-sizing: border-box; min-height: 100vh; height: auto;}
+.stayInfoList .stayInfoList_li{width: 100%; height: 160rpx; display: flex; justify-content: space-between; align-items: center;background: #fff; padding: 20rpx; margin-bottom: 30rpx;}
+.stayInfoList .stayInfoList_li .stayInfoList_li_img{width: 120rpx; height: 120rpx; border-radius: 20rpx;}
+.stayInfoList .stayInfoList_li .stayInfoList_li_con{width:400rpx; height: 120rpx;padding: 0 20rpx;}
+.stayInfoList .stayInfoList_li .stayInfoList_li_con text:nth-child(1){margin-bottom: 10rpx; font-weight: bold;}
+.stayInfoList .stayInfoList_li .stayInfoList_li_con text:nth-child(2){color: rgb(116, 116, 116);}
+.stayInfoList .stayInfoList_li .stayInfoList_li_con text{display: block; height: 50rpx; line-height: 50rpx; text-align: left; font-size: 28rpx;}
+.stayInfoList .stayInfoList_li .stayInfoList_li_tiem{height: 120rpx; margin-left: 20rpx;}
+.stayInfoList .stayInfoList_li .stayInfoList_li_tiem text:nth-child(1){margin-bottom: 10rpx; }
+.stayInfoList .stayInfoList_li .stayInfoList_li_tiem text{color: rgb(116, 116, 116);font-size: 28rpx; text-align: center; display: block;height: 50rpx; line-height: 50rpx;}
+.omit{text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}

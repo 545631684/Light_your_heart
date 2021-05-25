@@ -21,7 +21,10 @@
           <text class="doctor_info_title">推荐指数：</text>
           <image wx:for="{{item.Ratings}}" src="/assets/images/f_level_star.png" class="rating_img"></image>
         </view>
-        <view class="preview_btn" data-id="{{item.id}}" catchtap="preview">点击预约</view>
+        <view class="preview_btn">
+          <text wx:if="{{item.is_support_call == 1}}"  data-id="{{item.id}}" catchtap="preview">电话预约</text>
+          <text wx:if="{{item.is_support_chat == 1}}"  data-doctorId="{{item.id}}" data-userId="{{userId}}" catchtap="stayInfo">留言</text>
+        </view>
       </view>
     </view>
   </block>

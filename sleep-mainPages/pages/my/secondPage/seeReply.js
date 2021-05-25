@@ -12,7 +12,8 @@ Page({
         user_id:0,
         mycontent:'',
         type:1,
-        token:wx.getStorageSync('token')
+        token:wx.getStorageSync('token'),
+        MemberCode:wx.getStorageSync('MemberCode'),
     },
 
     /**
@@ -37,7 +38,7 @@ Page({
      */
     getMessage:function(){
         let _this = this
-        request("/member/get_all_message", 'post', {MemberCode:'LM-bLBIrolr',doctorid:_this.data.doctor_id,user_id:_this.data.user_id}, _this.data.token).then(res => {
+        request("/member/get_all_message", 'post', {MemberCode:_this.data.MemberCode,doctorid:_this.data.doctor_id,user_id:_this.data.user_id}, _this.data.token).then(res => {
             console.log('咨询回复数据',res)
             _this.setData({
                 listData:res.data.list,
@@ -141,7 +142,7 @@ Page({
                     console.log('订阅消息状态',res)
                     // 延迟一秒执行，给文本框赋值争取时间
                     setTimeout(function(){
-                        request("/member/submit_message", 'get', {MemberCode:'LM-bLBIrolr',doctor_id:_this.data.doctor_id,user_id:_this.data.user_id,mycontent:_this.data.type == 2 ?_this.data.mycontent2:_this.data.mycontent,type:_this.data.type}, _this.data.token).then(res => {
+                        request("/member/submit_message", 'get', {MemberCode:_this.data.MemberCode,doctor_id:_this.data.doctor_id,user_id:_this.data.user_id,mycontent:_this.data.type == 2 ?_this.data.mycontent2:_this.data.mycontent,type:_this.data.type}, _this.data.token).then(res => {
                             console.log('提交留言返回数据',res)
                             if(res.data.code == 0 && res.data.msg == '添加成功'){
                                 wx.showToast({

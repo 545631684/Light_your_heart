@@ -48,15 +48,25 @@ page {
 }
 
 .preview_btn {
-  width: 192rpx;
-  height: 68rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 250rpx;
+  height: 64rpx;
+  margin-top: 12rpx;
+  position: absolute;
+  right: 24rpx;
+  top: 8rpx;
+}
+.preview_btn text{
+  margin-left: 10rpx;
+  display: block;
+  width: 120rpx;
+  height: 64rpx;
   background: #2258ec;
   border-radius: 16rpx;
   color: #fff;
   text-align: center;
-  line-height: 68rpx;
+  line-height: 64rpx;
   margin-top: 12rpx;
-  position: absolute;
-  right: 24rpx;
-  top: 16rpx;
 }

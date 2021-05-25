@@ -1,0 +1,42 @@
+<view class="stayInfoList">
+    <view class="stayInfoList_li" wx:for="{{listData}}" wx:key="index" data-doctorId="{{item.doctorid}}" data-userId="{{item.user_id}}" catchtap="stayInfo" wx:if="{{role==1}}">
+        <image class="stayInfoList_li_img" src="{{item.user_image}}"></image>
+        <view class="stayInfoList_li_con">
+            <text class="omit">{{item.user_name}}</text>
+            <text class="omit" wx:if="{{item.message_detail.type == 1}}">{{item.message_detail.content}}</text>
+            <text class="omit" wx:if="{{item.message_detail.type == 2}}">[图片]</text>
+        </view>
+        <view class="stayInfoList_li_tiem" wx:if="{{item.xiaoxi}}">
+            <text>{{item.message_detail.rq}}</text>
+            <text>{{item.message_detail.time}}</text>
+        </view>
+    </view>
+
+    <view class="stayInfoList_li" wx:for="{{listData}}" wx:key="index" data-doctorId="{{item.doctorid}}" data-userId="{{item.user_id}}" catchtap="stayInfo" wx:if="{{role==0}}">
+        <image class="stayInfoList_li_img" src="{{item.doctor_image}}"></image>
+        <view class="stayInfoList_li_con">
+            <text class="omit">{{item.doctor_name}}</text>
+            <text class="omit" wx:if="{{item.message_detail.type == 1}}">{{item.message_detail.content}}</text>
+            <text class="omit" wx:if="{{item.message_detail.type == 2}}">[图片]</text>
+        </view>
+        <view class="stayInfoList_li_tiem" wx:if="{{item.xiaoxi}}">
+            <text>{{item.message_detail.rq}}</text>
+            <text>{{item.message_detail.time}}</text>
+        </view>
+    </view>
+
+
+    <!-- <view class="saveinfo_tab flex">
+        <view class="{{tab_index == 1 ? 'on' : ''}}"  data-index="1" bindtap="radioChange">文字</view>
+        <view class="{{tab_index == 2 ? 'on' : ''}}"  data-index="2" bindtap="radioChange">图片</view>
+    </view>
+    <view class="saveinfo_content">
+        <textarea wx:if="{{tab_index == 1}}" placeholder="请填写留言内容" auto-focus  bindblur="bindTextAreaBlur"/>
+        <view wx:elif="{{tab_index == 2}}" catchtap="uploadImg">
+            <text wx:if="{{mycontent == ''}}">点击上传图片</text>
+            <image wx:elif="{{mycontent != ''}}" src="{{mycontent}}" mode="aspectFill" ></image>
+        </view>
+    </view>
+
+    <view class="saveinfo_submit" catchtap="saveinfo_submit">提交</view> -->
+</view>

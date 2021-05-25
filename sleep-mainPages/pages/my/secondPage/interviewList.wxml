@@ -15,7 +15,7 @@
         <view class="interviewList_li_button">
             <!-- <view data-doctor_id="{{item.doctor_id}}" data-user_id="{{item.user_id}}" catchtap="mySeeReply">查看回复</view> -->
             <view data-id="{{item.id}}" catchtap="dialTel">电话咨询</view>
-            <view data-doctor_id="{{item.doctor_id}}" data-user_id="{{item.user_id}}" catchtap="mySeeReply">留言</view>
+            <!-- <view data-doctor_id="{{item.doctor_id}}" data-user_id="{{item.user_id}}" catchtap="mySeeReply">留言</view> -->
         </view>
     </view>
     <view class="interviewList_li" wx:for="{{interviewData}}" wx:key="index" wx:if="{{role == 1}}">
@@ -33,7 +33,7 @@
         <view class="interviewList_li_button">
             <!-- <view data-doctor_id="{{item.doctor_id}}" data-user_id="{{item.user_id}}" catchtap="mySeeReply">查看回复</view> -->
             <view data-id="{{item.id}}" catchtap="dialTel">电话咨询</view>
-            <view data-doctor_id="{{item.doctor_id}}" data-user_id="{{item.user_id}}" catchtap="mySeeReply">留言</view>
+            <!-- <view data-doctor_id="{{item.doctor_id}}" data-user_id="{{item.user_id}}" catchtap="mySeeReply">留言</view> -->
         </view>
     </view>
 </view>

@@ -15,6 +15,10 @@
       <view class="number">{{interview_count}}</view>
       <view>次访谈</view>
     </view>
+    <view class="my_num_item" catchtap="myStayInfo">
+      <view class="number">{{message_count}}</view>
+      <view>次留言</view>
+    </view>
   </view>
   <view class="tab_item">
     <button open-type="share" class="share_btn"></button>

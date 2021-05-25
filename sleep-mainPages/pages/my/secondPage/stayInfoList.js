@@ -6,20 +6,51 @@ Page({
      * 页面的初始数据
      */
     data: {
-        doctor_id:null,
-        user_id:null,
-        mycontent:'',
-        type:1,
-        tab_index:1,
+        MemberCode:wx.getStorageSync('MemberCode')
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        let _this = this
+        wx.showLoading({
+            title: '加载中',
+          })
+        request("/member/get_message_list", 'get', {MemberCode:_this.data.MemberCode}).then(res => {
+            console.log('留言列表数据',res)
+            if(res.data.list.length !== 0){
+                res.data.list.map(o=>{
+                    if(Object.keys(o.message_detail).length != 0){
+                        let date = new Date(o.message_detail.add_time)
+                        o.xiaoxi = true
+                        o.message_detail.rq = (date.getMonth() + 1) + '月' + date.getDate() + '日'
+                        o.message_detail.time =date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
+                    } else {
+                        o.xiaoxi = false
+                    }
+                    
+                })
+            }
+            _this.setData({
+                listData:res.data.list,
+                role:res.data.role
+            })
+            wx.hideLoading()
+        })
         this.setData({
             doctor_id:options.doctor_id,
             user_id:options.user_id,
+        })
+    },
+    /**
+     * 留言对话页跳转
+     */
+    stayInfo(e){
+        let userid = e.currentTarget.dataset.userid;
+        let doctorid = e.currentTarget.dataset.doctorid;
+        wx.navigateTo({
+        url: '/sleep-mainPages/pages/my/secondPage/seeReply?user_id=' + userid + '&doctor_id=' + doctorid,
         })
     },
     /**
@@ -97,7 +128,7 @@ Page({
                 // 延迟一秒执行，给文本框赋值争取时间
                 setTimeout(function(){
                     if(_this.data.doctor_id != '' && _this.data.user_id != '' && _this.data.mycontent != ''){
-                        request("/member/submit_message", 'get', {MemberCode:'LM-bLBIrolr',doctor_id:_this.data.doctor_id,user_id:_this.data.user_id,mycontent:_this.data.mycontent,type:_this.data.type}, _this.data.token).then(res => {
+                        request("/member/submit_message", 'get', {MemberCode:_this.data.MemberCode,doctor_id:_this.data.doctor_id,user_id:_this.data.user_id,mycontent:_this.data.mycontent,type:_this.data.type}, _this.data.token).then(res => {
                             console.log('提交留言返回数据',res)
                             if(res.data.code == 0 && res.data.msg == '添加成功'){
                                 wx.showToast({
