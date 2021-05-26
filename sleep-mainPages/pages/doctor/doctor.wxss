@@ -59,6 +59,7 @@ page {
   top: 8rpx;
 }
 .preview_btn text{
+  font-size: 24rpx;
   margin-left: 10rpx;
   display: block;
   width: 120rpx;
