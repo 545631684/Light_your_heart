@@ -1,190 +1,190 @@
 {
-    "projectname": "%E7%9D%A1%E7%9C%A0%E9%A1%B9%E7%9B%AE1",
-    "description": "",
-    "appid": "wxec4fb92adb5a3177",
-    "setting": {
-        "urlCheck": false,
-        "es6": true,
-        "enhance": false,
-        "postcss": true,
-        "preloadBackgroundData": false,
-        "minified": true,
-        "newFeature": true,
-        "coverView": true,
-        "nodeModules": true,
-        "autoAudits": false,
-        "showShadowRootInWxmlPanel": true,
-        "scopeDataCheck": false,
-        "uglifyFileName": false,
-        "checkInvalidKey": true,
-        "checkSiteMap": true,
-        "uploadWithSourceMap": true,
-        "compileHotReLoad": false,
-        "useMultiFrameRuntime": true,
-        "useApiHook": true,
-        "useApiHostProcess": true,
-        "babelSetting": {
-            "ignore": [],
-            "disablePlugins": [],
-            "outputPath": ""
-        },
-        "bundle": false,
-        "useIsolateContext": true,
-        "useCompilerModule": true,
-        "userConfirmedUseCompilerModuleSwitch": false,
-        "userConfirmedBundleSwitch": false,
-        "packNpmManually": false,
-        "packNpmRelationList": [],
-        "minifyWXSS": true
+  "projectname": "%E7%9D%A1%E7%9C%A0%E9%A1%B9%E7%9B%AE1",
+  "description": "",
+  "appid": "wxec4fb92adb5a3177",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
     },
-    "compileType": "miniprogram",
-    "simulatorType": "wechat",
-    "simulatorPluginLibVersion": {},
-    "libVersion": "2.16.0",
-    "condition": {
-        "search": {
-            "list": []
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "libVersion": "2.16.0",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "测评",
+          "pathName": "pages/evaluateList/index",
+          "query": "id=e75a4ea2750c4f969de2790d936a34c6&title=111",
+          "scene": null
         },
-        "conversation": {
-            "list": []
+        {
+          "id": 1,
+          "name": "测评结果",
+          "pathName": "pages/evaluateResult/index",
+          "query": "id=91",
+          "scene": null
         },
-        "plugin": {
-            "list": []
+        {
+          "id": 2,
+          "name": "自定义",
+          "pathName": "pages/doctorDetail/index",
+          "query": "id=e827022c19244df5bb93bc9f841194d1",
+          "scene": null
         },
-        "game": {
-            "list": []
+        {
+          "id": 3,
+          "name": "测评列表",
+          "pathName": "pages/evaluate/index",
+          "query": "id=0f52763b56684e51af6e93b34562f38f&title=123",
+          "scene": null
         },
-        "gamePlugin": {
-            "list": []
+        {
+          "id": -1,
+          "name": "首页",
+          "pathName": "pages/home/index",
+          "query": "",
+          "scene": null
         },
-        "miniprogram": {
-            "list": [
-                {
-                    "id": 0,
-                    "name": "测评",
-                    "pathName": "pages/evaluateList/index",
-                    "query": "id=e75a4ea2750c4f969de2790d936a34c6&title=111",
-                    "scene": null
-                },
-                {
-                    "id": 1,
-                    "name": "测评结果",
-                    "pathName": "pages/evaluateResult/index",
-                    "query": "id=91",
-                    "scene": null
-                },
-                {
-                    "id": 2,
-                    "name": "自定义",
-                    "pathName": "pages/doctorDetail/index",
-                    "query": "id=e827022c19244df5bb93bc9f841194d1",
-                    "scene": null
-                },
-                {
-                    "id": 3,
-                    "name": "测评列表",
-                    "pathName": "pages/evaluate/index",
-                    "query": "id=0f52763b56684e51af6e93b34562f38f&title=123",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "首页",
-                    "pathName": "pages/home/index",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": 5,
-                    "name": "d",
-                    "pathName": "pages/evaluateMenu/index",
-                    "query": "id=e747f0cfa7d74bd396db8513b6359b17&title=123",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "睡眠App首页",
-                    "pathName": "sleep-mainPages/pages/college/college",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "选择卫生习惯",
-                    "pathName": "sleep-clockinPages/pages/somnus/somnus",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "一周记录",
-                    "pathName": "sleep-clockinPages/pages/WeeklySleepRecord/WeeklySleepRecord",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "打卡",
-                    "pathName": "sleep-clockinPages/pages/adhereclockin/adhereclockin",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "测评列表",
-                    "pathName": "sleep-testPages/pages/TestList/TestList",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "记录睡眠",
-                    "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "睡眠分析",
-                    "pathName": "sleep-mainPages/pages/day/day",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "结果1",
-                    "pathName": "sleep-testPages/pages/TestResult1/index",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": 14,
-                    "name": "测试结果2",
-                    "pathName": "sleep-testPages/pages/TestResult2/index",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "lihuitest",
-                    "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "我的",
-                    "pathName": "sleep-mainPages/pages/my/my",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "id": -1,
-                    "name": "测评",
-                    "pathName": "sleep-testPages/pages/TestList/TestList",
-                    "scene": null
-                }
-            ]
+        {
+          "id": 5,
+          "name": "d",
+          "pathName": "pages/evaluateMenu/index",
+          "query": "id=e747f0cfa7d74bd396db8513b6359b17&title=123",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "睡眠App首页",
+          "pathName": "sleep-mainPages/pages/college/college",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "选择卫生习惯",
+          "pathName": "sleep-clockinPages/pages/somnus/somnus",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "一周记录",
+          "pathName": "sleep-clockinPages/pages/WeeklySleepRecord/WeeklySleepRecord",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "打卡",
+          "pathName": "sleep-clockinPages/pages/adhereclockin/adhereclockin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "测评列表",
+          "pathName": "sleep-testPages/pages/TestList/TestList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "记录睡眠",
+          "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "睡眠分析",
+          "pathName": "sleep-mainPages/pages/day/day",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "结果1",
+          "pathName": "sleep-testPages/pages/TestResult1/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 14,
+          "name": "测试结果2",
+          "pathName": "sleep-testPages/pages/TestResult2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "lihuitest",
+          "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "我的",
+          "pathName": "sleep-mainPages/pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "测评",
+          "pathName": "sleep-testPages/pages/TestList/TestList",
+          "scene": null
         }
+      ]
     }
+  }
 }

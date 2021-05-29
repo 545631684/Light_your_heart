@@ -83,6 +83,17 @@ page {
   margin-left: 134rpx;
 }
 
+.star_index_title2 {
+  width: 280rpx;
+  line-height: 36rpx;
+  font-size: 26rpx;
+  color: #FBF8FC;
+  position: absolute;
+  left: -7rpx;
+  top: 570rpx;
+  text-align: center;
+}
+
 .star0 {
   width: 143rpx;
   height: 178rpx;

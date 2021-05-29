@@ -11,6 +11,7 @@
 </view>
 <!-- <view style="height:{{navHeight}}px"></view> -->
 <view class="star_index_title">您有多久没有睡过一个好觉，做过一个好梦了？请填写信息，评估您受失眠困扰的程度。</view>
+<view class="star_index_title2"><text>点击星球，\n开启为期8周的\n失眠认知行为治疗</text></view>
 <view class="star0" catchtap="shapeTest">
   <image class="star0_img" src="https://manage.shrlxl.com/public/static/uploads/20210223/star_images/star0.png"></image>
 </view>
