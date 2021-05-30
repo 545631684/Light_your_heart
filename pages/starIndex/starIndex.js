@@ -92,9 +92,15 @@ Page({
               price: that.data.stars[id - 1].price
             })
           } else {
-            wx.navigateTo({
+            		wx.requestSubscribeMessage({
+            tmplIds: ['6q_3I1Wp3p3wktaTmPZm5ebmT0WhXNSTLW0u_Pv99zA','-Rmo6FYg0zI0Evovyy_jPiB9MseSLRPiaMtE1RI70iI'],
+            success(res) {
+				wx.navigateTo({
               url: '/sleep-mainPages/pages/college/college?name=' + name + "&id=" + id,
             })
+
+            }
+        })
           }
         }
       }
@@ -121,15 +127,22 @@ Page({
     })
   },
   openNow() {
-    if (this.data.price > 0) {
+	  var that=this;
+    if (that.data.price > 0) {
       console.log('需要支付')
     } else {
-      this.setData({
+      that.setData({
         showAlert: false,
       })
-      wx.navigateTo({
-        url: '/sleep-mainPages/pages/college/college?name=' + this.data.starName + "&id=" + this.data.id,
-      })
+      wx.requestSubscribeMessage({
+            tmplIds: ['6q_3I1Wp3p3wktaTmPZm5ebmT0WhXNSTLW0u_Pv99zA','-Rmo6FYg0zI0Evovyy_jPiB9MseSLRPiaMtE1RI70iI'],
+            success(res) {
+				wx.navigateTo({
+              url: '/sleep-mainPages/pages/college/college?name=' + that.data.starName + "&id=" + that.data.id,
+            })
+
+            }
+        })
     }
 
   },

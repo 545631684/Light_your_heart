@@ -44,14 +44,15 @@ function initChart(canvas, width, height) {
     for (var i = 0; i < 7; i++) {
       //  console.log(getDate(i))
       for (var j = 0; j < data.length; j++) {
-        //  if(data[j].X == getDate(i)){
+          if(data[j].X == getDate(i)){
         datalist[i] = data[j]
         break
-        // }          
+         }          
       }
     }
 
     console.log(datalist, 'datalist')
+	datalist = datalist.reverse()//数组反转下
     datalist.forEach((e) => {
       listX.push(e.X)
       // listX.push(e.X)
