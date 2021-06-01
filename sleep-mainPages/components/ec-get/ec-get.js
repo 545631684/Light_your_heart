@@ -96,6 +96,7 @@ function initChart(canvas, width, height) {
       yAxis: {
         type: 'category',
         boundaryGap: false,
+        data: ['0','5','10','15','20','25','30','35','40','45','50'],
         // data: list,
         axisLine: {
           show: false
