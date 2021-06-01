@@ -429,9 +429,13 @@ Page({
     this.setData({
       show: false
     });
+    
     if (this.data.gaidate) {
-      wx.navigateBack({
-        delta: -1,
+      // wx.navigateBack({
+      //   delta: -1,
+      // })
+      wx.navigateTo({
+        url: '/sleep-additemPages/pages/dayTime/dayTime',
       })
     } else {
       wx.navigateTo({

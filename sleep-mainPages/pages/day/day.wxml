@@ -96,7 +96,7 @@
             <text class="size" style="color:{{Efficiency2 >= 75 ? 'white' : '#2258EC'}}">{{Efficiency2}}<text class="cent" >%</text></text>            
             <view class="record" style="color:{{Efficiency2 >= 40 ? 'white' : '#2258EC'}}">睡眠效率</view>
         </view>
-        <view class="efficiency-title">
+        <!-- <view class="efficiency-title">
           <view class="fall rule">
             <image src="../../assets/images/sleepstatistics/rushui.png" class="fall-icon"></image>
             <text class="speed">入睡速度：</text>
@@ -109,11 +109,11 @@
             <text class="fall-time">{{Wake}}min</text>
             <text class="fall-text">(正常)</text>
           </view>
-        </view>
+        </view> -->
       </view>
       <!-- 睡眠时长 -->
        <view class="analyze" wx:if="{{tabArr.curBdIndex==2}}">
-        <view class="sleep-text"><view></view>睡眠时长<text>（7.2h/天）</text></view>
+        <view class="sleep-text"><view></view>睡眠时长<text>（{{HowLong_average}}/天）</text></view>
         <view class="ec">
           <ec-duration />
         </view>
@@ -121,21 +121,33 @@
 
       <!-- 入睡时间分析 -->
        <view class="analyze" wx:if="{{tabArr.curBdIndex==2}}">
-        <view class="sleep-text"><view></view>入睡时间分析<text>（22:44）</text></view>
+        <view class="sleep-text"><view></view>入睡时间分析</view>
+        <!-- <view class="sleep-text"><view></view>入睡时间分析<text>（22:44）</text></view> -->
         <view class="ec">
           <ec-out />
         </view>
       </view>
 
-      <!-- 起床时间分析 -->
+      <!-- 夜醒时长分析 -->
       <view class="analyze" wx:if="{{tabArr.curBdIndex==2}}">
-        <view class="sleep-text"><view></view>起床时间分析<text>（07:01）</text></view>
+        <view class="sleep-text"><view></view>夜醒时长分析</view>
+        <!-- <view class="sleep-text"><view></view>起床时间分析<text>（07:01）</text></view> -->
         <view class="ec">
           <ec-get />
         </view>
       </view>
         
-
+      <!-- 睡眠分析 -->
+      <view class="analysis">
+        <view class="sleep-text"><view></view>睡眠分析</view>
+        <view class="van-ellipsis" style="margin-bottom:16rpx">
+        {{Analyse}}
+          <!-- 您<text>06月14日</text>晚的睡眠效率为<text>88%</text>，超过85%，睡眠质量<text>较高</text>睡眠时间为充分，但睡眠整体感觉一般，您的睡眠调节能力依然较强，无需过分担心，可以适当增加午睡，并稍微提升早上床并避免连续熬夜。 -->
+        </view>
+        <view class="van-ellipsis">
+          <!-- 您在夜间有轻微觉醒对整体睡眠影响不大，进食最好在睡前4小时进行，入睡会让你消化系统缓慢下来，而太接近睡前的大餐会导致夜间消化不想和反流。 -->
+        </view>
+      </view>
       
       <!-- 补全日期日记 -->
       <view style="height:100rpx;width:100%"></view>

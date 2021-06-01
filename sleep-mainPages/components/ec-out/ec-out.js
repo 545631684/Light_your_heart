@@ -99,7 +99,8 @@ function initChart(canvas, width, height) {
       yAxis: {
         type: 'category',
         boundaryGap: false,
-        data: numlist,
+        data: ['20:00','21:00','22:00','23:00','00:00','01:00','02:00','03:00','04:00','05:00','06:00'],
+        // data: numlist,
         axisLine: {
           show: false
         },
@@ -116,8 +117,26 @@ function initChart(canvas, width, height) {
         }
       },
       series: [{
+        name: '●',
         data: list,
         type: 'bar',
+        label:{
+          show:true,
+          position:['50%','0%'],
+          distance: 15,
+          align: 'center',
+          verticalAlign: 'top',
+          formatter: '{name|{a}}',
+          rich: {
+            name: {
+              showAbove:true,
+              color: '#fff',
+              fontFamily: 'Microsoft YaHei',
+              fontSize: 16
+             }
+              
+          }
+        },
         itemStyle: {
           normal: {
             //柱形图圆角，初始化效果
@@ -128,6 +147,7 @@ function initChart(canvas, width, height) {
         barWidth: 13.5
       }]
     };
+    console.log("入睡时间分析表图数据",option)
     chart.setOption(option);
     return chart;
 

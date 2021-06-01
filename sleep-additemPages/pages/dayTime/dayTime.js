@@ -730,6 +730,7 @@ Page({
     this.data.dto.Behavior.EFeast = false;
     this.data.dto.Behavior.ESport = false;
     for (var i = 0; i < this.data.day.length; i++) {
+      console.log("出错数据",this.data.day[i].zzw)
       for (var j = 0; j < this.data.day[i].zzw.length; j++) {
         console.log(this.data.lock);
         if (i == 0) {

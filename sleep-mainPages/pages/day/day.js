@@ -249,9 +249,11 @@ Page({
       }
       this.setData({
         Efficiency2:xiaolv,
+        Analyse:res.data.data.Analyse,
         Speed:res.data.data.Speed,
         Wake:res.data.data.Wake,
-        GetUpAnalyse:res.data.data.GetUpAnalyse
+        GetUpAnalyse:res.data.data.GetUpAnalyse,
+        HowLong_average:res.data.data.HowLong_average
       })
     })
 

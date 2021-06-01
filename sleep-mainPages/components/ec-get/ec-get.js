@@ -38,7 +38,7 @@ function initChart(canvas, width, height) {
     endDate: now,
     memberCode: MemberCode
   }, token).then(res => {
-    // console.log(res,'周分析')
+    console.log(res,'夜醒时长分析')
     // 起床时间分析 
     var data = res.data.data.GetUpAnalyse;
     var listX = [];
@@ -57,25 +57,25 @@ function initChart(canvas, width, height) {
     console.log(datalist, 'datalist')
     datalist.forEach((e) => {
       listX.push(e.X)
-      var s = (e.Y).substr(0, 2) + ":00"
+      // var s = (e.Y).substr(0, 2) + ":00"
       //  console.log(s)
-      list.push(s)
+      list.push(e.Y)
     })
-    var num = []
-    list.forEach(e => {
-      num.push(Number(e.substr(0, 2)))
-    })
-    var max = Math.max(...num)
-    var min = Math.min(...num)
-    var numlist = [];
-    console.log(num, max, min, '大小')
-    for (var i = min - 1; i <= max + 1; i++) {
-      if (i < 10) {
-        i = "0" + i
-      }
-      numlist.push(i + ":00")
-    }
-    console.log(numlist)
+    // var num = []
+    // list.forEach(e => {
+    //   num.push(Number(e.substr(0, 2)))
+    // })
+    // var max = Math.max(...num)
+    // var min = Math.min(...num)
+    // var numlist = [];
+    // console.log(num, max, min, '大小')
+    // for (var i = min - 1; i <= max + 1; i++) {
+    //   if (i < 10) {
+    //     i = "0" + i
+    //   }
+    //   numlist.push(i + ":00")
+    // }
+    // console.log(numlist)
     var option = {
       grid: {
         y: 40,
@@ -96,7 +96,7 @@ function initChart(canvas, width, height) {
       yAxis: {
         type: 'category',
         boundaryGap: false,
-        data: numlist,
+        // data: list,
         axisLine: {
           show: false
         },
@@ -134,6 +134,7 @@ function initChart(canvas, width, height) {
         symbolSize: 7
       }]
     };
+    console.log('夜醒时长分析数据',option)
     chart.setOption(option);
     return chart;
 
