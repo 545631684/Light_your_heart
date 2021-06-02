@@ -82,6 +82,7 @@ function initChart(canvas, width, height) {
       grid: {
         y: 40,
         y2: 40,
+        x:50,
       },
       xAxis: {
         type: 'category',

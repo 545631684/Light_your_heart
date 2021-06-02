@@ -80,6 +80,7 @@ function initChart(canvas, width, height) {
       grid: {
         y: 40,
         y2: 40,
+        x:50,
       },
       xAxis: {
         type: 'category',
@@ -96,7 +97,7 @@ function initChart(canvas, width, height) {
       yAxis: {
         type: 'category',
         boundaryGap: false,
-        data: ['0','5','10','15','20','25','30','35','40','45','50'],
+        data: ['0min','5min','10min','15min','20min','25min','30min','35min','40min','45min','50min'],
         // data: list,
         axisLine: {
           show: false
