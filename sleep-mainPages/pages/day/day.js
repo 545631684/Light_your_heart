@@ -249,7 +249,7 @@ Page({
       }
       this.setData({
         Efficiency2:xiaolv,
-        Analyse:res.data.data.Analyse,
+        Analyse2:res.data.data.Analyse,
         Speed:res.data.data.Speed,
         Wake:res.data.data.Wake,
         GetUpAnalyse:res.data.data.GetUpAnalyse,

@@ -57,9 +57,10 @@ function initChart(canvas, width, height) {
       listX.push(e.X)
       // listX.push(e.X)
       var s = Math.floor((e.Y) / 60)
-      var ss = Math.floor((e.Y) / 60) - 6
+      // var ss = Math.floor((e.Y) / 60) - 6
+      
       list.push(s)
-      lists.push(ss)
+      lists.push((e.Y / 60).toFixed(1))
 
     })
     var num = []
@@ -96,9 +97,12 @@ function initChart(canvas, width, height) {
         }
       },
       yAxis: {
-        type: 'category',
+        type: 'value',
         boundaryGap: false,
         data: numlist,
+        axisLabel:{
+          formatter: '{value} h',
+        },
         axisLine: {
           show: false
         },
@@ -135,6 +139,7 @@ function initChart(canvas, width, height) {
         symbolSize: 7
       }]
     }
+    console.log('睡眠时长数据',option)
     chart.setOption(option);
     return chart;
 

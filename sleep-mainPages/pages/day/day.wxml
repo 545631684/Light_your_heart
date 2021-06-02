@@ -141,7 +141,7 @@
       <view class="analysis">
         <view class="sleep-text"><view></view>睡眠分析</view>
         <view class="van-ellipsis" style="margin-bottom:16rpx">
-        {{Analyse}}
+        {{Analyse2}}
           <!-- 您<text>06月14日</text>晚的睡眠效率为<text>88%</text>，超过85%，睡眠质量<text>较高</text>睡眠时间为充分，但睡眠整体感觉一般，您的睡眠调节能力依然较强，无需过分担心，可以适当增加午睡，并稍微提升早上床并避免连续熬夜。 -->
         </view>
         <view class="van-ellipsis">

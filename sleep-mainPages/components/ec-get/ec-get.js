@@ -95,15 +95,16 @@ function initChart(canvas, width, height) {
       },
 
       yAxis: {
-        type: 'category',
+        type: 'value',
         boundaryGap: false,
-        data: ['0min','5min','10min','15min','20min','25min','30min','35min','40min','45min','50min'],
-        // data: list,
         axisLine: {
           show: false
         },
         axisTick: {
           show: false
+        },
+        axisLabel:{
+          formatter: '{value} min',
         },
         splitLine: {
           show: true,
