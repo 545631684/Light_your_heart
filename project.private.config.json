@@ -1,226 +1,233 @@
 {
-  "setting": {},
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": 0,
-          "name": "测评",
-          "pathName": "pages/evaluateList/index",
-          "query": "id=e75a4ea2750c4f969de2790d936a34c6&title=111",
-          "scene": null
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
         },
-        {
-          "id": 1,
-          "name": "测评结果",
-          "pathName": "pages/evaluateResult/index",
-          "query": "id=91",
-          "scene": null
+        "game": {
+            "list": []
         },
-        {
-          "id": 2,
-          "name": "自定义",
-          "pathName": "pages/doctorDetail/index",
-          "query": "id=e827022c19244df5bb93bc9f841194d1",
-          "scene": null
+        "gamePlugin": {
+            "list": []
         },
-        {
-          "id": 3,
-          "name": "测评列表",
-          "pathName": "pages/evaluate/index",
-          "query": "id=0f52763b56684e51af6e93b34562f38f&title=123",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "首页",
-          "pathName": "pages/home/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": 5,
-          "name": "d",
-          "pathName": "pages/evaluateMenu/index",
-          "query": "id=e747f0cfa7d74bd396db8513b6359b17&title=123",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "睡眠App首页",
-          "pathName": "sleep-mainPages/pages/college/college",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "选择卫生习惯",
-          "pathName": "sleep-clockinPages/pages/somnus/somnus",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "一周记录",
-          "pathName": "sleep-clockinPages/pages/WeeklySleepRecord/WeeklySleepRecord",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "打卡",
-          "pathName": "sleep-clockinPages/pages/adhereclockin/adhereclockin",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "测评列表",
-          "pathName": "sleep-testPages/pages/TestList/TestList",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "记录睡眠",
-          "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "睡眠分析",
-          "pathName": "sleep-mainPages/pages/day/day",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "结果1",
-          "pathName": "sleep-testPages/pages/TestResult1/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": 14,
-          "name": "测试结果2",
-          "pathName": "sleep-testPages/pages/TestResult2/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "lihuitest",
-          "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "我的",
-          "pathName": "sleep-mainPages/pages/my/my",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "测评",
-          "pathName": "sleep-testPages/pages/TestList/TestList",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "白天行为",
-          "pathName": "sleep-additemPages/pages/dayTime/dayTime",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "昨晚睡的好吗",
-          "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "好梦之旅",
-          "pathName": "sleep-mainPages/pages/college/college",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/evaluate/index",
-          "pathName": "pages/evaluate/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "新睡眠记录",
-          "pathName": "sleep-additemPages/pages/RecordSleep2/RecordSleep",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "sleep-testPages/pages/TestQuestion1/TestQuestion1",
-          "pathName": "sleep-testPages/pages/TestQuestion1/TestQuestion1",
-          "query": "type=5&pro_index=4",
-          "scene": null
-        },
-        {
-          "name": "飞船",
-          "pathName": "pages/myInfoTest/myInfoTest",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/login/index",
-          "pathName": "pages/login/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/doctor/doctor",
-          "pathName": "pages/doctor/doctor",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "在线访谈",
-          "pathName": "sleep-mainPages/pages/doctor/doctor",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "测评结果",
-          "pathName": "sleep-testPages/pages/TestResult1/index",
-          "query": "id=483",
-          "scene": null
-        },
-        {
-          "name": "我的访谈列表",
-          "pathName": "sleep-mainPages/pages/my/secondPage/interviewList",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "查看留言回复",
-          "pathName": "sleep-mainPages/pages/my/secondPage/seeReply",
-          "query": "user_id=101&doctor_id=2",
-          "scene": null
-        },
-        {
-          "name": "留言列表",
-          "pathName": "sleep-mainPages/pages/my/secondPage/stayInfoList",
-          "scene": null
+        "miniprogram": {
+            "list": [
+                {
+                    "id": 0,
+                    "name": "测评",
+                    "pathName": "pages/evaluateList/index",
+                    "query": "id=e75a4ea2750c4f969de2790d936a34c6&title=111",
+                    "scene": null
+                },
+                {
+                    "id": 1,
+                    "name": "测评结果",
+                    "pathName": "pages/evaluateResult/index",
+                    "query": "id=91",
+                    "scene": null
+                },
+                {
+                    "id": 2,
+                    "name": "自定义",
+                    "pathName": "pages/doctorDetail/index",
+                    "query": "id=e827022c19244df5bb93bc9f841194d1",
+                    "scene": null
+                },
+                {
+                    "id": 3,
+                    "name": "测评列表",
+                    "pathName": "pages/evaluate/index",
+                    "query": "id=0f52763b56684e51af6e93b34562f38f&title=123",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "首页",
+                    "pathName": "pages/home/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": 5,
+                    "name": "d",
+                    "pathName": "pages/evaluateMenu/index",
+                    "query": "id=e747f0cfa7d74bd396db8513b6359b17&title=123",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "睡眠App首页",
+                    "pathName": "sleep-mainPages/pages/college/college",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "选择卫生习惯",
+                    "pathName": "sleep-clockinPages/pages/somnus/somnus",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "一周记录",
+                    "pathName": "sleep-clockinPages/pages/WeeklySleepRecord/WeeklySleepRecord",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "打卡",
+                    "pathName": "sleep-clockinPages/pages/adhereclockin/adhereclockin",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "测评列表",
+                    "pathName": "sleep-testPages/pages/TestList/TestList",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "记录睡眠",
+                    "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "睡眠分析",
+                    "pathName": "sleep-mainPages/pages/day/day",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "结果1",
+                    "pathName": "sleep-testPages/pages/TestResult1/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": 14,
+                    "name": "测试结果2",
+                    "pathName": "sleep-testPages/pages/TestResult2/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "lihuitest",
+                    "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "我的",
+                    "pathName": "sleep-mainPages/pages/my/my",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "测评",
+                    "pathName": "sleep-testPages/pages/TestList/TestList",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "白天行为",
+                    "pathName": "sleep-additemPages/pages/dayTime/dayTime",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "昨晚睡的好吗",
+                    "pathName": "sleep-additemPages/pages/RecordSleep/RecordSleep",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "好梦之旅",
+                    "pathName": "sleep-mainPages/pages/college/college",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/evaluate/index",
+                    "pathName": "pages/evaluate/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "新睡眠记录",
+                    "pathName": "sleep-additemPages/pages/RecordSleep2/RecordSleep",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "sleep-testPages/pages/TestQuestion1/TestQuestion1",
+                    "pathName": "sleep-testPages/pages/TestQuestion1/TestQuestion1",
+                    "query": "type=5&pro_index=4",
+                    "scene": null
+                },
+                {
+                    "name": "飞船",
+                    "pathName": "pages/myInfoTest/myInfoTest",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/login/index",
+                    "pathName": "pages/login/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/doctor/doctor",
+                    "pathName": "pages/doctor/doctor",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "在线访谈",
+                    "pathName": "sleep-mainPages/pages/doctor/doctor",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "测评结果",
+                    "pathName": "sleep-testPages/pages/TestResult1/index",
+                    "query": "id=483",
+                    "scene": null
+                },
+                {
+                    "name": "我的访谈列表",
+                    "pathName": "sleep-mainPages/pages/my/secondPage/interviewList",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "查看留言回复",
+                    "pathName": "sleep-mainPages/pages/my/secondPage/seeReply",
+                    "query": "user_id=101&doctor_id=2",
+                    "scene": null
+                },
+                {
+                    "name": "留言列表",
+                    "pathName": "sleep-mainPages/pages/my/secondPage/stayInfoList",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "帮助中心",
+                    "pathName": "sleep-mainPages/pages/my/secondPage/secondPage",
+                    "query": "title=帮助中心",
+                    "scene": null
+                }
+            ]
         }
-      ]
     }
-  }
 }
