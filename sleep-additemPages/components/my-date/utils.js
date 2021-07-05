@@ -33,10 +33,10 @@ function formatTime(date) {
  }
   
  // 两位数自动补零
- function formatNumber(n) {
-  n = n.toString()
-  return n[1] ? n : '0' + n
- }
+//  function formatNumber(n) {
+//   n = n.toString()
+//   return n[1] ? n : '0' + n
+//  }
   
  // 两位数以内的数字自动补零
  function formatNumber(n) {

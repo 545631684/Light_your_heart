@@ -43,10 +43,14 @@ Component({
       })
     },
     nav4(){
-      wx.redirectTo({
-        url:'/sleep-mainPages/pages/doctor/doctor'
-      })
-      // Toast('功能正在开发~');
+      let is_support_consulting_service = wx.getStorageSync('is_support_consulting_service')
+      if(is_support_consulting_service == '0'){
+        Toast('功能正在开发~');
+      } else {
+        wx.redirectTo({
+          url:'/sleep-mainPages/pages/doctor/doctor'
+        })
+      }
     }
   },
 })

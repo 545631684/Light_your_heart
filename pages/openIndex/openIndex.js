@@ -14,6 +14,7 @@ Page({
     request("/index/get_config", "get", token).then(res => {
       console.log("获取配置", res)
       wx.setStorageSync('test_membercode', res.data.test_membercode)
+      wx.setStorageSync('is_support_consulting_service', res.data.is_support_consulting_service)
       if (!res.data.is_phone_auth) {
         wx.redirectTo({
           url: '/pages/starIndex/starIndex',
